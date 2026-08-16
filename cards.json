@@ -1,8 +1,14 @@
 [
   {
+    "card_id": "2986",
+    "card_name": "카드 정보",
+    "card_url": "https://www.card-gorilla.com/card/detail/2986",
+    "page_title": "삼성 iD SELECT UP 카드"
+  },
+  {
     "card_id": "3016",
-    "card_name": "",
-    "card_company": "신한카드",
-    "card_url": "https://www.card-gorilla.com/card/detail/3016"
+    "card_name": "카드 정보",
+    "card_url": "https://www.card-gorilla.com/card/detail/3016",
+    "page_title": "케이뱅크 BUSINESS 현대카드"
   }
 ]
