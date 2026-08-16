@@ -1,5 +1,4 @@
 import json
-import time
 from playwright.sync_api import sync_playwright
 
 URL = "https://www.card-gorilla.com/card/credit"
@@ -10,6 +9,49 @@ print("=" * 50)
 
 cards = {}
 
+
+def collect_cards(page):
+    """현재 페이지에 로딩된 카드들을 수집"""
+
+    links = page.locator('a[href*="/card/detail/"]')
+    count = links.count()
+
+    for i in range(count):
+        try:
+            link = links.nth(i)
+
+            href = link.get_attribute("href")
+
+            if not href:
+                continue
+
+            if "/card/detail/" not in href:
+                continue
+
+            # 상대경로 → 절대경로
+            if href.startswith("/"):
+                href = "https://www.card-gorilla.com" + href
+
+            # 카드 ID 추출
+            card_id = href.rstrip("/").split("/")[-1]
+
+            # 링크 안의 텍스트
+            text = link.inner_text().strip()
+
+            # 중복 제거
+            if card_id not in cards:
+                cards[card_id] = {
+                    "card_id": card_id,
+                    "card_name": text,
+                    "card_url": href
+                }
+
+        except Exception as e:
+            print(f"카드 수집 오류: {e}")
+
+    return len(cards)
+
+
 with sync_playwright() as p:
 
     browser = p.chromium.launch(
@@ -17,7 +59,10 @@ with sync_playwright() as p:
     )
 
     page = browser.new_page(
-        viewport={"width": 1440, "height": 900},
+        viewport={
+            "width": 1440,
+            "height": 900
+        },
         user_agent=(
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -29,79 +74,49 @@ with sync_playwright() as p:
 
     page.goto(
         URL,
-        wait_until="networkidle",
+        wait_until="domcontentloaded",
         timeout=60000
     )
 
+    # 페이지가 완전히 표시될 때까지 잠시 대기
+    page.wait_for_timeout(3000)
+
     print("페이지 로딩 완료")
 
-    # 처음부터 카드 수집
-    def collect_cards():
+    # -------------------------
+    # 처음 카드 수집
+    # -------------------------
 
-        links = page.locator(
-            'a[href*="/card/detail/"]'
-        )
+    current = collect_cards(page)
 
-        count = links.count()
+    print(f"현재 발견 카드: {current}개")
 
-        for i in range(count):
-
-            try:
-                link = links.nth(i)
-
-                href = link.get_attribute("href")
-
-                if not href:
-                    continue
-
-                if "/card/detail/" not in href:
-                    continue
-
-                # URL 정리
-                if href.startswith("/"):
-                    href = "https://www.card-gorilla.com" + href
-
-                # 카드 ID
-                card_id = href.rstrip("/").split("/")[-1]
-
-                # 텍스트
-                text = link.inner_text().strip()
-
-                if card_id not in cards:
-
-                    cards[card_id] = {
-                        "card_id": card_id,
-                        "card_name": text,
-                        "card_url": href
-                    }
-
-        return len(cards)
-
-    # 첫 수집
-    before = collect_cards()
-
-    print(f"현재 발견 카드: {before}개")
-
+    # -------------------------
     # 카드 더보기 반복
+    # -------------------------
+
     for attempt in range(100):
 
-        buttons = page.get_by_text(
+        before = len(cards)
+
+        # 카드 더보기 버튼 찾기
+        button = page.get_by_text(
             "카드 더보기",
             exact=True
         )
 
-        count = buttons.count()
+        button_count = button.count()
 
-        if count == 0:
-
+        if button_count == 0:
             print("카드 더보기 버튼을 찾지 못했습니다.")
             break
 
-        button = buttons.last
-
         try:
+            # 마지막 버튼 사용
+            target = button.last
 
-            if not button.is_visible():
+            if not target.is_visible():
+                print("카드 더보기 버튼이 보이지 않습니다.")
                 break
 
             print(
@@ -109,45 +124,44 @@ with sync_playwright() as p:
                 f"({attempt + 1}/100)"
             )
 
-            before_count = len(cards)
+            # 버튼 위치로 이동
+            target.scroll_into_view_if_needed()
 
-            button.scroll_into_view_if_needed()
-
-            button.click(
+            # 클릭
+            target.click(
                 timeout=10000
             )
 
-            # JS 데이터 로딩 대기
+            # 카드 추가 로딩 대기
             page.wait_for_timeout(1500)
 
-            after_count = collect_cards()
+            # 새 카드 수집
+            after = collect_cards(page)
 
             print(
-                f"현재 발견 카드: "
-                f"{after_count}개"
+                f"현재 발견 카드: {after}개"
             )
 
-            # 더 이상 증가하지 않으면 종료
-            if after_count == before_count:
-
+            # 카드가 더 이상 늘어나지 않으면 종료
+            if after == before:
                 print(
-                    "새로운 카드가 추가되지 않아 "
-                    "종료합니다."
+                    "새로운 카드가 추가되지 않아 종료합니다."
                 )
-
                 break
 
         except Exception as e:
 
             print(
-                "더보기 클릭 오류:",
-                e
+                f"더보기 클릭 중 오류: {e}"
             )
 
             break
 
+    # -------------------------
     # 마지막 수집
-    total = collect_cards()
+    # -------------------------
+
+    total = collect_cards(page)
 
     print("=" * 50)
     print(f"전체 카드 ID: {total}개")
@@ -156,7 +170,10 @@ with sync_playwright() as p:
     browser.close()
 
 
-# JSON 저장
+# -------------------------
+# cards.json 저장
+# -------------------------
+
 result = list(cards.values())
 
 with open(
@@ -173,8 +190,7 @@ with open(
     )
 
 print(
-    f"cards.json 저장 완료: "
-    f"{len(result)}개"
+    f"cards.json 저장 완료: {len(result)}개"
 )
 
 print("=" * 50)
