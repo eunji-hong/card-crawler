@@ -13,152 +13,83 @@ API_URL = "https://api.card-gorilla.com:8080/v1/cards"
 
 OUTPUT_FILE = Path("cards.json")
 
-# 실제 확인된 API 파라미터
-PER_PAGE = 10
-
-# API 요청 사이 대기 시간
-REQUEST_DELAY = 0.5
-
-# 서버 오류 발생 시 최대 재시도 횟수
-MAX_RETRIES = 5
-
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept": "application/json, text/plain, */*",
     "Referer": "https://www.card-gorilla.com/",
 }
 
+# 한 번에 요청할 카드 수
+# 가장 큰 값부터 시도한다.
+PAGE_SIZES = [
+    1450,
+    1000,
+    500,
+    300,
+    200,
+    100,
+    50,
+    30,
+    20,
+    10,
+]
+
+TIMEOUT = 60
+
 
 # ============================================================
 # API 요청
 # ============================================================
 
-def get_cards(page):
+def request_cards(page, per_page):
     """
-    카드고릴라 API에서 특정 페이지의 카드를 가져온다.
-
-    500 오류나 네트워크 오류가 발생하면
-    최대 MAX_RETRIES번 재시도한다.
+    카드고릴라 API 요청
     """
 
     params = {
         "p": page,
-        "perPage": PER_PAGE,
+        "perPage": per_page,
         "is_discon": 0,
     }
 
-    for attempt in range(1, MAX_RETRIES + 1):
-
-        try:
-
-            response = requests.get(
-                API_URL,
-                params=params,
-                headers=HEADERS,
-                timeout=30,
-            )
-
-            print(
-                f"[API] p={page} "
-                f"status={response.status_code} "
-                f"(시도 {attempt}/{MAX_RETRIES})"
-            )
-
-            # ------------------------------------------------
-            # 정상 응답
-            # ------------------------------------------------
-
-            if response.status_code == 200:
-
-                result = response.json()
-
-                if not isinstance(result, dict):
-                    raise RuntimeError(
-                        "API 응답 형식이 올바르지 않습니다."
-                    )
-
-                if "data" not in result:
-                    raise RuntimeError(
-                        "API 응답에 data가 없습니다."
-                    )
-
-                return result
-
-            # ------------------------------------------------
-            # 서버 오류 500번대
-            # ------------------------------------------------
-
-            if response.status_code >= 500:
-
-                if attempt < MAX_RETRIES:
-
-                    wait_seconds = attempt * 3
-
-                    print(
-                        f"[RETRY] "
-                        f"{page}페이지 서버 오류 "
-                        f"{response.status_code}"
-                    )
-
-                    print(
-                        f"       {wait_seconds}초 후 재시도합니다."
-                    )
-
-                    time.sleep(wait_seconds)
-
-                    continue
-
-                print(
-                    f"[ERROR] "
-                    f"{page}페이지 "
-                    f"{MAX_RETRIES}회 재시도 실패"
-                )
-
-                response.raise_for_status()
-
-            # ------------------------------------------------
-            # 400 등 기타 HTTP 오류
-            # ------------------------------------------------
-
-            response.raise_for_status()
-
-        except requests.exceptions.RequestException as e:
-
-            if attempt < MAX_RETRIES:
-
-                wait_seconds = attempt * 3
-
-                print(
-                    f"[RETRY] "
-                    f"{page}페이지 요청 오류"
-                )
-
-                print(
-                    f"       {e}"
-                )
-
-                print(
-                    f"       {wait_seconds}초 후 재시도합니다."
-                )
-
-                time.sleep(wait_seconds)
-
-                continue
-
-            print(
-                f"[ERROR] "
-                f"{page}페이지 요청 실패"
-            )
-
-            raise
-
-    raise RuntimeError(
-        f"{page}페이지 API 요청에 실패했습니다."
+    print()
+    print("-" * 60)
+    print(
+        f"API 요청: p={page}, perPage={per_page}"
     )
+
+    response = requests.get(
+        API_URL,
+        params=params,
+        headers=HEADERS,
+        timeout=TIMEOUT,
+    )
+
+    print(
+        f"STATUS: {response.status_code}"
+    )
+
+    if response.status_code != 200:
+        print(
+            "응답:",
+            response.text[:500]
+        )
+        return None
+
+    try:
+        result = response.json()
+    except Exception as e:
+        print(
+            "JSON 변환 실패:",
+            e
+        )
+        return None
+
+    return result
 
 
 # ============================================================
-# 전체 카드 크롤링
+# 한 번에 전체 카드 가져오기
 # ============================================================
 
 def crawl_all_cards():
@@ -168,98 +99,227 @@ def crawl_all_cards():
     print("카드고릴라 전체 카드 API 크롤링 시작")
     print("=" * 70)
 
-    all_cards = []
-
     # --------------------------------------------------------
-    # 첫 번째 요청
-    # 전체 카드 수 확인
+    # 먼저 전체 카드 수 확인
     # --------------------------------------------------------
 
-    first_result = get_cards(1)
-
-    total = first_result.get("total", 0)
-
-    first_cards = first_result.get(
-        "data",
-        []
+    summary = requests.get(
+        API_URL,
+        params={
+            "summaryOnly": "true"
+        },
+        headers=HEADERS,
+        timeout=TIMEOUT,
     )
 
     print()
-    print(f"전체 카드 수: {total}")
     print(
-        f"1페이지 카드 수: "
-        f"{len(first_cards)}"
+        f"전체 카드 수 API STATUS: "
+        f"{summary.status_code}"
     )
 
-    if total == 0:
+    if summary.status_code != 200:
 
         print(
-            "카드가 없습니다."
+            "전체 카드 수 확인 실패"
+        )
+
+        print(
+            summary.text[:500]
+        )
+
+        raise RuntimeError(
+            "카드고릴라 API 접속 실패"
+        )
+
+    summary_data = summary.json()
+
+    total = summary_data.get(
+        "total",
+        0
+    )
+
+    print(
+        f"카드고릴라 전체 카드 수: "
+        f"{total}"
+    )
+
+    if total <= 0:
+
+        print(
+            "가져올 카드가 없습니다."
         )
 
         return []
 
-    all_cards.extend(
-        first_cards
-    )
-
     # --------------------------------------------------------
-    # 전체 페이지 수 계산
+    # 가장 큰 perPage부터 시도
     # --------------------------------------------------------
 
-    total_pages = (
-        total + PER_PAGE - 1
-    ) // PER_PAGE
+    cards = None
+    selected_page_size = None
 
-    print(
-        f"전체 페이지 수: "
-        f"{total_pages}"
-    )
+    for page_size in PAGE_SIZES:
 
-    # --------------------------------------------------------
-    # 나머지 페이지 수집
-    # --------------------------------------------------------
+        print()
+        print(
+            f"perPage={page_size} 테스트"
+        )
 
-    for page in range(
-        2,
-        total_pages + 1
-    ):
+        result = request_cards(
+            page=1,
+            per_page=page_size
+        )
 
-        result = get_cards(page)
+        if result is None:
 
-        cards = result.get(
+            print(
+                f"perPage={page_size} "
+                f"사용 불가"
+            )
+
+            continue
+
+        data = result.get(
             "data",
             []
         )
 
-        if not cards:
+        actual_count = len(data)
+
+        print(
+            f"요청 결과: "
+            f"{actual_count}개"
+        )
+
+        # ----------------------------------------------------
+        # 전체 카드가 한 번에 들어온 경우
+        # ----------------------------------------------------
+
+        if actual_count >= total:
+
+            cards = data
+
+            selected_page_size = page_size
 
             print()
             print(
-                f"[WARNING] "
-                f"{page}페이지에서 카드가 없습니다."
-            )
-
-            print(
-                "수집을 중단합니다."
+                "✅ 전체 카드가 한 번에 수집되었습니다."
             )
 
             break
 
-        all_cards.extend(
-            cards
+        # ----------------------------------------------------
+        # 일부만 가져온 경우
+        # ----------------------------------------------------
+
+        if actual_count > 0:
+
+            cards = data
+
+            selected_page_size = page_size
+
+            print(
+                f"perPage={page_size}는 "
+                f"{actual_count}개까지 가져왔습니다."
+            )
+
+            break
+
+    # --------------------------------------------------------
+    # 어떤 방식도 성공하지 못한 경우
+    # --------------------------------------------------------
+
+    if cards is None:
+
+        raise RuntimeError(
+            "카드 목록 API에서 데이터를 가져오지 못했습니다."
+        )
+
+    # --------------------------------------------------------
+    # 한 번에 전체가 안 들어왔다면
+    # 선택된 perPage로 나머지 페이지 수집
+    # --------------------------------------------------------
+
+    if len(cards) < total:
+
+        print()
+        print("=" * 70)
+        print(
+            "한 번에 전체 카드가 들어오지 않았습니다."
         )
 
         print(
-            f"[{page}/{total_pages}] "
-            f"{len(cards)}개 수집 "
-            f"/ 누적 {len(all_cards)}개"
+            f"선택된 perPage: "
+            f"{selected_page_size}"
         )
 
-        # API에 너무 빠르게 요청하지 않도록 대기
-        time.sleep(
-            REQUEST_DELAY
+        print(
+            f"현재 수집: "
+            f"{len(cards)}개"
         )
+
+        print(
+            f"전체 필요: "
+            f"{total}개"
+        )
+
+        print("=" * 70)
+
+        # 필요한 페이지 수
+        total_pages = (
+            total
+            + selected_page_size
+            - 1
+        ) // selected_page_size
+
+        print(
+            f"총 {total_pages}페이지 필요"
+        )
+
+        # 2페이지부터 요청
+        for page in range(
+            2,
+            total_pages + 1
+        ):
+
+            result = request_cards(
+                page=page,
+                per_page=selected_page_size
+            )
+
+            if result is None:
+
+                raise RuntimeError(
+                    f"{page}페이지 "
+                    "수집 실패"
+                )
+
+            page_cards = result.get(
+                "data",
+                []
+            )
+
+            if not page_cards:
+
+                print(
+                    f"{page}페이지에 "
+                    "카드가 없습니다."
+                )
+
+                break
+
+            cards.extend(
+                page_cards
+            )
+
+            print(
+                f"[{page}/{total_pages}] "
+                f"{len(page_cards)}개 수집 "
+                f"/ 누적 {len(cards)}개"
+            )
+
+            time.sleep(0.5)
 
     # --------------------------------------------------------
     # 중복 제거
@@ -267,7 +327,7 @@ def crawl_all_cards():
 
     unique_cards = {}
 
-    for card in all_cards:
+    for card in cards:
 
         if not isinstance(
             card,
@@ -291,53 +351,34 @@ def crawl_all_cards():
     )
 
     # --------------------------------------------------------
-    # 결과 출력
+    # 결과
     # --------------------------------------------------------
 
     print()
     print("=" * 70)
-    print("수집 완료")
+    print("최종 수집 결과")
     print("=" * 70)
 
     print(
-        f"API 수집 카드: "
-        f"{len(all_cards)}개"
+        f"API 전체 카드 수: "
+        f"{total}"
     )
 
     print(
-        f"중복 제거 후: "
-        f"{len(cards)}개"
+        f"수집한 카드 수: "
+        f"{len(cards)}"
     )
 
-    print(
-        f"API total: "
-        f"{total}개"
-    )
-
-    # --------------------------------------------------------
-    # 카드 수 검증
-    # --------------------------------------------------------
-
-    if len(cards) != total:
-
-        print()
-        print(
-            "⚠️ 주의: API total과 실제 수집 카드 수가 다릅니다."
-        )
+    if len(cards) == total:
 
         print(
-            f"API total = {total}"
-        )
-
-        print(
-            f"실제 수집 = {len(cards)}"
+            "✅ 1450개 전체 카드 수집 성공"
         )
 
     else:
 
-        print()
         print(
-            "✅ 전체 카드가 정상적으로 수집되었습니다."
+            "⚠️ 카드 수가 일치하지 않습니다."
         )
 
     return cards
@@ -379,7 +420,6 @@ def main():
 
     if not cards:
 
-        print()
         print(
             "저장할 카드가 없습니다."
         )
@@ -392,23 +432,9 @@ def main():
 
     print()
     print("=" * 70)
-    print("최종 결과")
+    print("크롤링 완료")
     print("=" * 70)
 
-    print(
-        f"cards.json 카드 수: "
-        f"{len(cards)}개"
-    )
-
-    print(
-        f"저장 위치: "
-        f"{OUTPUT_FILE}"
-    )
-
-
-# ============================================================
-# 실행
-# ============================================================
 
 if __name__ == "__main__":
     main()
