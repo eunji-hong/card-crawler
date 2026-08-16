@@ -1,69 +1,90 @@
-import asyncio
-from playwright.async_api import async_playwright
+import json
+import requests
 
 
-URL = "https://www.card-gorilla.com/search/card"
+API_URL = "https://api.card-gorilla.com:8080/v1/cards"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://www.card-gorilla.com/",
+}
 
 
-async def main():
+def main():
 
-    async with async_playwright() as p:
+    print("=" * 70)
+    print("카드고릴라 카드 API 테스트")
+    print("=" * 70)
 
-        browser = await p.chromium.launch(
-            headless=True
+    params = {
+        "p": 1,
+        "perPage": 10,
+        "is_discon": 0
+    }
+
+    response = requests.get(
+        API_URL,
+        params=params,
+        headers=HEADERS,
+        timeout=30
+    )
+
+    print()
+    print("REQUEST:")
+    print(response.url)
+
+    print()
+    print("STATUS:")
+    print(response.status_code)
+
+    response.raise_for_status()
+
+    data = response.json()
+
+    print()
+    print("RESPONSE:")
+    print(
+        json.dumps(
+            data,
+            ensure_ascii=False,
+            indent=2
+        )[:10000]
+    )
+
+    # --------------------------------------------------
+    # 응답 구조 확인
+    # --------------------------------------------------
+
+    print()
+    print("=" * 70)
+    print("응답 구조")
+    print("=" * 70)
+
+    print(
+        "TYPE:",
+        type(data).__name__
+    )
+
+    if isinstance(data, dict):
+
+        print(
+            "KEYS:",
+            list(data.keys())
         )
 
-        page = await browser.new_page()
+    elif isinstance(data, list):
 
-        print("=" * 70)
-        print("CARD GORILLA 실제 API 요청 확인")
-        print("=" * 70)
-
-        async def on_request(request):
-
-            if "/v1/cards" in request.url:
-
-                print()
-                print("=" * 70)
-                print("★ 실제 카드 API 요청 발견")
-                print("=" * 70)
-
-                print("METHOD:")
-                print(request.method)
-
-                print("URL:")
-                print(request.url)
-
-                print("POST DATA:")
-                print(request.post_data)
-
-                print("HEADERS:")
-                print(
-                    request.headers
-                )
-
-        page.on(
-            "request",
-            on_request
+        print(
+            "LIST LENGTH:",
+            len(data)
         )
 
-        await page.goto(
-            URL,
-            wait_until="domcontentloaded",
-            timeout=60000
-        )
-
-        await page.wait_for_timeout(
-            15000
-        )
-
-        print()
-        print("=" * 70)
-        print("완료")
-        print("=" * 70)
-
-        await browser.close()
+    print()
+    print("=" * 70)
+    print("API 테스트 완료")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
