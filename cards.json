@@ -1,1 +1,352 @@
-[]
+[
+  {
+    "id": "1",
+    "name": "삼성 iD SELECT ALL 카드",
+    "company": "신한카드"
+  },
+  {
+    "id": "2",
+    "name": "삼성카드 & MILEAGE PLATINUM (스카이패스)",
+    "company": "신한카드"
+  },
+  {
+    "id": "3",
+    "name": "삼성 iD SELECT UP 카드",
+    "company": "신한카드"
+  },
+  {
+    "id": "4",
+    "name": "THE iD. 1st",
+    "company": "신한카드"
+  },
+  {
+    "id": "5",
+    "name": "삼성카드 taptap O",
+    "company": "신한카드"
+  },
+  {
+    "id": "6",
+    "name": "삼성카드 taptap S",
+    "company": "신한카드"
+  },
+  {
+    "id": "7",
+    "name": "삼성 iD SELECT ON 카드",
+    "company": "신한카드"
+  },
+  {
+    "id": "8",
+    "name": "삼성 iD GLOBAL 카드",
+    "company": "신한카드"
+  },
+  {
+    "id": "9",
+    "name": "THE 1 (스카이패스)",
+    "company": "신한카드"
+  },
+  {
+    "id": "10",
+    "name": "삼성 iD SIMPLE 카드",
+    "company": "신한카드"
+  },
+  {
+    "id": "11",
+    "name": "신한카드 Mr.Life",
+    "company": "삼성카드"
+  },
+  {
+    "id": "12",
+    "name": "신한카드 처음(ANNIVERSE)",
+    "company": "삼성카드"
+  },
+  {
+    "id": "13",
+    "name": "신한카드 Discount Plan+",
+    "company": "삼성카드"
+  },
+  {
+    "id": "14",
+    "name": "신한카드 Simple Plan+",
+    "company": "삼성카드"
+  },
+  {
+    "id": "15",
+    "name": "신한카드 Deep Oil",
+    "company": "삼성카드"
+  },
+  {
+    "id": "16",
+    "name": "신한카드 Point Plan",
+    "company": "삼성카드"
+  },
+  {
+    "id": "17",
+    "name": "신한카드 Air One",
+    "company": "삼성카드"
+  },
+  {
+    "id": "18",
+    "name": "신한카드 The CLASSIC-Y",
+    "company": "삼성카드"
+  },
+  {
+    "id": "19",
+    "name": "K-패스 신한카드",
+    "company": "삼성카드"
+  },
+  {
+    "id": "20",
+    "name": "신한카드 Globus",
+    "company": "삼성카드"
+  },
+  {
+    "id": "21",
+    "name": "굿데이카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "22",
+    "name": "KB국민 My WE:SH 카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "23",
+    "name": "KB NEED Pay 카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "24",
+    "name": "KB YOU Prime 카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "25",
+    "name": "KB YOU Wish 카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "26",
+    "name": "쿠팡 와우카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "27",
+    "name": "WE:SH Travel",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "28",
+    "name": "K-패스카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "29",
+    "name": "KB ALL point 카드",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "30",
+    "name": "HERITAGE Smart [대한항공 마일리지형]",
+    "company": "KB국민카드"
+  },
+  {
+    "id": "31",
+    "name": "카드의정석2 SUPER",
+    "company": "롯데카드"
+  },
+  {
+    "id": "32",
+    "name": "카드의정석 EVERY MILE SKYPASS",
+    "company": "롯데카드"
+  },
+  {
+    "id": "33",
+    "name": "카드의정석 SHOPPING+",
+    "company": "롯데카드"
+  },
+  {
+    "id": "34",
+    "name": "ALL 우리카드 Infinite",
+    "company": "롯데카드"
+  },
+  {
+    "id": "35",
+    "name": "카드의정석2",
+    "company": "롯데카드"
+  },
+  {
+    "id": "36",
+    "name": "TWO CHAIRS",
+    "company": "롯데카드"
+  },
+  {
+    "id": "37",
+    "name": "카드의정석 PREMIUM MILEAGE(SKYPASS)",
+    "company": "롯데카드"
+  },
+  {
+    "id": "38",
+    "name": "the OPUS silver",
+    "company": "롯데카드"
+  },
+  {
+    "id": "39",
+    "name": "카드의정석2 ROUTINE",
+    "company": "롯데카드"
+  },
+  {
+    "id": "40",
+    "name": "트래블월렛 우리카드",
+    "company": "롯데카드"
+  },
+  {
+    "id": "41",
+    "name": "알파벳카드S",
+    "company": "하나카드"
+  },
+  {
+    "id": "42",
+    "name": "American Express® Gold Card Edition2",
+    "company": "하나카드"
+  },
+  {
+    "id": "43",
+    "name": "대한항공카드 300",
+    "company": "하나카드"
+  },
+  {
+    "id": "44",
+    "name": "알파벳카드R",
+    "company": "하나카드"
+  },
+  {
+    "id": "45",
+    "name": "알파벳카드O",
+    "company": "하나카드"
+  },
+  {
+    "id": "46",
+    "name": "대한항공카드 the First Edition2",
+    "company": "하나카드"
+  },
+  {
+    "id": "47",
+    "name": "알파벳카드H",
+    "company": "하나카드"
+  },
+  {
+    "id": "48",
+    "name": "알파벳카드B",
+    "company": "하나카드"
+  },
+  {
+    "id": "49",
+    "name": "현대카드ZERO Edition3(할인형)",
+    "company": "하나카드"
+  },
+  {
+    "id": "50",
+    "name": "대한항공카드 120",
+    "company": "하나카드"
+  },
+  {
+    "id": "51",
+    "name": "트래블로그+(플러스) 신용카드",
+    "company": "우리카드"
+  },
+  {
+    "id": "52",
+    "name": "JADE Classic",
+    "company": "우리카드"
+  },
+  {
+    "id": "53",
+    "name": "원더카드 2.0 FREE+",
+    "company": "우리카드"
+  },
+  {
+    "id": "54",
+    "name": "MOVING카드 ONLINE모드",
+    "company": "우리카드"
+  },
+  {
+    "id": "55",
+    "name": "하나 스카이패스 아멕스 플래티늄 카드",
+    "company": "우리카드"
+  },
+  {
+    "id": "56",
+    "name": "JADE Prime",
+    "company": "우리카드"
+  },
+  {
+    "id": "57",
+    "name": "원더카드 2.0 FREE",
+    "company": "우리카드"
+  },
+  {
+    "id": "58",
+    "name": "MOVING카드 ALLDAY모드",
+    "company": "우리카드"
+  },
+  {
+    "id": "59",
+    "name": "CLUB SK 카드",
+    "company": "우리카드"
+  },
+  {
+    "id": "60",
+    "name": "원더카드 2.0 LIFE",
+    "company": "우리카드"
+  },
+  {
+    "id": "61",
+    "name": "NH20해봄카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "62",
+    "name": "올바른 FLEX 카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "63",
+    "name": "클래시 트래블카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "64",
+    "name": "zgm 할인카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "65",
+    "name": "별다줄카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "66",
+    "name": "zgm.the pay카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "67",
+    "name": "zgm.일본여행중 카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "68",
+    "name": "K-패스카드(신용)",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "69",
+    "name": "zgm.play카드",
+    "company": "NH농협카드"
+  },
+  {
+    "id": "70",
+    "name": "zgm.streaming카드",
+    "company": "NH농협카드"
+  }
+]
