@@ -1,295 +1,8 @@
 import asyncio
-import json
-import re
-from pathlib import Path
-
 from playwright.async_api import async_playwright
 
 
-BASE_URL = "https://www.card-gorilla.com"
-LIST_URL = f"{BASE_URL}/search/card"
-OUTPUT_FILE = Path("cards.json")
-
-
-async def collect_card_links(page):
-    """
-    현재 페이지에 표시되어 있는 카드 상세 URL을 전부 수집한다.
-    """
-
-    links = await page.locator('a[href*="/card/detail/"]').evaluate_all(
-        """
-        elements => elements
-            .map(a => a.href)
-            .filter(href => /\\/card\\/detail\\/\\d+/.test(href))
-        """
-    )
-
-    result = set()
-
-    for url in links:
-        match = re.search(r"/card/detail/(\d+)", url)
-
-        if match:
-            card_id = match.group(1)
-            result.add(
-                f"{BASE_URL}/card/detail/{card_id}"
-            )
-
-    return result
-
-
-async def scroll_to_bottom(page):
-    """
-    페이지를 천천히 아래까지 내려서
-    lazy loading 되어 있는 카드들을 화면에 표시한다.
-    """
-
-    previous_height = 0
-    stable_count = 0
-
-    for _ in range(30):
-
-        current_height = await page.evaluate(
-            "document.body.scrollHeight"
-        )
-
-        await page.evaluate(
-            "window.scrollTo(0, document.body.scrollHeight)"
-        )
-
-        await page.wait_for_timeout(800)
-
-        new_height = await page.evaluate(
-            "document.body.scrollHeight"
-        )
-
-        if new_height == previous_height:
-            stable_count += 1
-        else:
-            stable_count = 0
-
-        previous_height = new_height
-
-        if stable_count >= 3:
-            break
-
-
-async def click_more_button(page):
-    """
-    '카드 더보기'라는 텍스트를 가진 실제 DOM 요소를 찾는다.
-
-    특정 CSS selector에 의존하지 않는다.
-    """
-
-    result = await page.evaluate(
-        """
-        () => {
-            const elements = Array.from(
-                document.querySelectorAll("button, a, div, span")
-            );
-
-            const candidates = elements.filter(el => {
-                const text = (el.innerText || "").trim();
-
-                return text === "카드 더보기" ||
-                       text.includes("카드 더보기");
-            });
-
-            if (candidates.length === 0) {
-                return false;
-            }
-
-            // 가장 작은 요소를 우선 선택
-            candidates.sort((a, b) => {
-                return a.getBoundingClientRect().height
-                     - b.getBoundingClientRect().height;
-            });
-
-            const target = candidates[0];
-
-            target.scrollIntoView({
-                behavior: "instant",
-                block: "center"
-            });
-
-            target.click();
-
-            return true;
-        }
-        """
-    )
-
-    return result
-
-
-async def crawl_all_cards(page):
-    """
-    카드고릴라 전체 카드 URL 수집
-    """
-
-    print("=" * 60)
-    print("카드고릴라 전체 카드 크롤링 시작")
-    print("=" * 60)
-
-    print()
-    print("카드 목록 페이지 접속")
-
-    await page.goto(
-        LIST_URL,
-        wait_until="domcontentloaded",
-        timeout=60000
-    )
-
-    await page.wait_for_timeout(3000)
-
-    print("페이지 로딩 완료")
-
-    all_cards = set()
-
-    previous_count = 0
-    no_change_count = 0
-
-    for round_no in range(1, 101):
-
-        # 화면 아래까지 이동
-        await scroll_to_bottom(page)
-
-        # 현재 카드 링크 수집
-        current_cards = await collect_card_links(page)
-
-        before = len(all_cards)
-
-        all_cards.update(current_cards)
-
-        after = len(all_cards)
-
-        print(
-            f"{round_no}회차 - "
-            f"현재 페이지 카드: {len(current_cards)}개 / "
-            f"전체 발견: {after}개"
-        )
-
-        # 카드 수가 증가하지 않았는지 확인
-        if after == previous_count:
-            no_change_count += 1
-        else:
-            no_change_count = 0
-
-        previous_count = after
-
-        # 충분히 반복했는데 더 이상 증가하지 않으면 종료
-        if no_change_count >= 3:
-            print()
-            print("새로운 카드가 더 이상 발견되지 않아 종료합니다.")
-            break
-
-        # 카드 더보기 클릭
-        clicked = await click_more_button(page)
-
-        if clicked:
-            print("카드 더보기 클릭")
-
-            # 새로운 카드가 로딩될 시간
-            await page.wait_for_timeout(1500)
-
-        else:
-            print("카드 더보기 요소를 찾지 못했습니다.")
-
-            # 혹시 lazy loading 때문에 아직 안 잡혔을 수 있으므로
-            # 한 번 더 기다린다.
-            await page.wait_for_timeout(1000)
-
-            clicked_again = await click_more_button(page)
-
-            if clicked_again:
-                print("카드 더보기 재탐색 성공")
-                await page.wait_for_timeout(1500)
-            else:
-                # 카드 수가 계속 유지되면 종료
-                if no_change_count >= 1:
-                    print("더 이상 추가할 카드가 없는 것으로 판단합니다.")
-                    break
-
-    return all_cards
-
-
-async def get_card_detail(page, url):
-    """
-    카드 상세 페이지에서 기본 정보 수집
-    """
-
-    card_id_match = re.search(r"/card/detail/(\d+)", url)
-
-    if not card_id_match:
-        return None
-
-    card_id = card_id_match.group(1)
-
-    print(f"카드 상세 수집: {card_id}")
-
-    try:
-        await page.goto(
-            url,
-            wait_until="domcontentloaded",
-            timeout=60000
-        )
-
-        await page.wait_for_timeout(1000)
-
-        title = await page.title()
-
-        # 페이지에서 카드명을 찾는다.
-        card_name = ""
-
-        selectors = [
-            "h1",
-            "h2",
-            "h3",
-            ".card_name",
-            ".card-name",
-            "[class*='card_name']",
-            "[class*='card-name']",
-        ]
-
-        for selector in selectors:
-
-            locator = page.locator(selector)
-
-            count = await locator.count()
-
-            if count > 0:
-
-                for i in range(min(count, 5)):
-
-                    text = (await locator.nth(i).inner_text()).strip()
-
-                    if text and len(text) > 1:
-                        card_name = text
-                        break
-
-            if card_name:
-                break
-
-        return {
-            "card_id": card_id,
-            "card_name": card_name,
-            "card_url": url,
-            "page_title": title,
-        }
-
-    except Exception as e:
-
-        print(
-            f"상세 페이지 수집 실패 "
-            f"{card_id}: {e}"
-        )
-
-        return {
-            "card_id": card_id,
-            "card_name": "",
-            "card_url": url,
-            "page_title": "",
-        }
+URL = "https://www.card-gorilla.com/search/card"
 
 
 async def main():
@@ -300,81 +13,358 @@ async def main():
             headless=True
         )
 
-        context = await browser.new_context(
+        page = await browser.new_page(
             viewport={
                 "width": 1440,
                 "height": 1200
-            },
-            locale="ko-KR",
-            user_agent=(
-                "Mozilla/5.0 (X11; Linux x86_64) "
-                "AppleWebKit/537.36 "
-                "(KHTML, like Gecko) "
-                "Chrome/131.0.0.0 Safari/537.36"
-            )
+            }
         )
 
-        page = await context.new_page()
+        print("=" * 70)
+        print("CARD GORILLA DOM 진단")
+        print("=" * 70)
 
-        # -----------------------------
-        # 1. 전체 카드 URL 수집
-        # -----------------------------
+        # --------------------------------------------------
+        # 네트워크 요청
+        # --------------------------------------------------
 
-        card_urls = await crawl_all_cards(page)
+        def on_request(request):
 
-        card_urls = sorted(
-            card_urls,
-            key=lambda url: int(
-                re.search(r"/card/detail/(\d+)", url).group(1)
-            )
+            url = request.url.lower()
+
+            # 불필요한 폰트/이미지 등 제외
+            keywords = [
+                "card",
+                "search",
+                "list",
+                "ajax",
+                "api",
+                "json"
+            ]
+
+            if any(keyword in url for keyword in keywords):
+
+                print(
+                    "[REQUEST]",
+                    request.method,
+                    request.url
+                )
+
+                if request.method == "POST":
+
+                    try:
+                        print(
+                            "[POST DATA]",
+                            request.post_data
+                        )
+                    except Exception:
+                        pass
+
+
+        page.on(
+            "request",
+            on_request
         )
+
+
+        # --------------------------------------------------
+        # 페이지 접속
+        # --------------------------------------------------
 
         print()
-        print("=" * 60)
-        print(f"전체 카드 ID: {len(card_urls)}개")
-        print("=" * 60)
+        print("페이지 접속")
 
-        # -----------------------------
-        # 2. 상세 페이지 수집
-        # -----------------------------
+        await page.goto(
+            URL,
+            wait_until="domcontentloaded",
+            timeout=60000
+        )
 
-        cards = []
+        await page.wait_for_timeout(5000)
 
-        for index, url in enumerate(card_urls, start=1):
+        print("페이지 로딩 완료")
+
+
+        # --------------------------------------------------
+        # 1. 페이지 텍스트 확인
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("1. 페이지에 '카드 더보기'가 존재하는지")
+        print("=" * 70)
+
+        text_count = await page.get_by_text(
+            "카드 더보기",
+            exact=True
+        ).count()
+
+        print(
+            "정확히 '카드 더보기'인 요소:",
+            text_count
+        )
+
+
+        # --------------------------------------------------
+        # 2. 카드 더보기 관련 모든 요소
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("2. '카드 더보기' 관련 DOM")
+        print("=" * 70)
+
+        elements = await page.locator(
+            "body *"
+        ).evaluate_all(
+            """
+            elements => elements
+                .filter(el => {
+                    const text = (el.innerText || "").trim();
+                    return text.includes("카드 더보기");
+                })
+                .slice(0, 20)
+                .map(el => ({
+                    tag: el.tagName,
+                    id: el.id,
+                    className: el.className,
+                    text: (el.innerText || "").trim().substring(0, 100),
+                    outerHTML: el.outerHTML.substring(0, 1000)
+                }))
+            """
+        )
+
+        for index, element in enumerate(
+            elements,
+            start=1
+        ):
+
+            print()
+            print(f"[{index}]")
+            print("TAG:", element["tag"])
+            print("ID:", element["id"])
+            print("CLASS:", element["className"])
+            print("TEXT:", element["text"])
+            print("HTML:", element["outerHTML"])
+
+
+        # --------------------------------------------------
+        # 3. 카드 상세 링크
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("3. 현재 페이지의 카드 상세 링크")
+        print("=" * 70)
+
+        card_links = await page.locator(
+            'a[href*="/card/detail/"]'
+        ).evaluate_all(
+            """
+            elements => elements.map(a => ({
+                href: a.href,
+                text: (a.innerText || "").trim()
+            }))
+            """
+        )
+
+        print(
+            "카드 상세 링크 수:",
+            len(card_links)
+        )
+
+        for item in card_links[:20]:
 
             print(
-                f"[{index}/{len(card_urls)}] {url}"
+                item["href"],
+                "|",
+                item["text"][:100]
             )
 
-            detail = await get_card_detail(
-                page,
-                url
-            )
 
-            if detail:
-                cards.append(detail)
-
-        # -----------------------------
-        # 3. JSON 저장
-        # -----------------------------
-
-        with open(
-            OUTPUT_FILE,
-            "w",
-            encoding="utf-8"
-        ) as f:
-
-            json.dump(
-                cards,
-                f,
-                ensure_ascii=False,
-                indent=2
-            )
+        # --------------------------------------------------
+        # 4. HTML에서 card/detail 검색
+        # --------------------------------------------------
 
         print()
-        print("=" * 60)
-        print(f"cards.json 저장 완료: {len(cards)}개")
-        print("=" * 60)
+        print("=" * 70)
+        print("4. HTML의 card/detail 개수")
+        print("=" * 70)
+
+        html = await page.content()
+
+        print(
+            "card/detail 등장 횟수:",
+            html.count("/card/detail/")
+        )
+
+
+        # --------------------------------------------------
+        # 5. 페이지의 script 확인
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("5. 카드 관련 JavaScript")
+        print("=" * 70)
+
+        scripts = await page.locator(
+            "script"
+        ).evaluate_all(
+            """
+            scripts => scripts.map(s => ({
+                src: s.src,
+                text: s.innerText
+            }))
+            """
+        )
+
+        for script in scripts:
+
+            src = script["src"]
+
+            text = script["text"]
+
+            if (
+                "card" in src.lower()
+                or "search" in src.lower()
+                or "card" in text.lower()
+                or "more" in text.lower()
+            ):
+
+                print()
+                print("SCRIPT SRC:")
+                print(src)
+
+                if text:
+
+                    # 너무 길면 앞부분만
+                    print(
+                        text[:3000]
+                    )
+
+
+        # --------------------------------------------------
+        # 6. 카드 더보기 클릭 전후 HTML 비교
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("6. 카드 더보기 클릭 테스트")
+        print("=" * 70)
+
+        before_html = await page.content()
+
+        before_links = await page.locator(
+            'a[href*="/card/detail/"]'
+        ).count()
+
+        print(
+            "클릭 전 카드 링크:",
+            before_links
+        )
+
+
+        # 카드 더보기 후보
+        candidates = await page.locator(
+            "button, a, div, span"
+        ).evaluate_all(
+            """
+            elements => elements
+                .filter(el => {
+                    const text = (el.innerText || "").trim();
+
+                    return text === "카드 더보기" ||
+                           text.includes("카드 더보기");
+                })
+                .slice(0, 10)
+                .map(el => ({
+                    tag: el.tagName,
+                    id: el.id,
+                    className: el.className,
+                    text: (el.innerText || "").trim(),
+                    html: el.outerHTML.substring(0, 1500)
+                }))
+            """
+        )
+
+        print(
+            "더보기 후보:",
+            len(candidates)
+        )
+
+
+        if candidates:
+
+            print()
+            print("첫 번째 후보:")
+            print(
+                candidates[0]["html"]
+            )
+
+            # JS로 실제 클릭
+            clicked = await page.evaluate(
+                """
+                () => {
+
+                    const elements = Array.from(
+                        document.querySelectorAll(
+                            "button, a, div, span"
+                        )
+                    );
+
+                    const target = elements.find(
+                        el => {
+                            const text =
+                                (el.innerText || "").trim();
+
+                            return text === "카드 더보기";
+                        }
+                    );
+
+                    if (!target) {
+                        return false;
+                    }
+
+                    target.scrollIntoView({
+                        block: "center"
+                    });
+
+                    target.click();
+
+                    return true;
+                }
+                """
+            )
+
+            print(
+                "JS 클릭 결과:",
+                clicked
+            )
+
+            await page.wait_for_timeout(
+                3000
+            )
+
+
+            after_links = await page.locator(
+                'a[href*="/card/detail/"]'
+            ).count()
+
+            print(
+                "클릭 후 카드 링크:",
+                after_links
+            )
+
+
+        # --------------------------------------------------
+        # 종료
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("진단 완료")
+        print("=" * 70)
 
         await browser.close()
 
