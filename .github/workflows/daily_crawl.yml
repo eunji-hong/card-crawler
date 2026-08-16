@@ -33,14 +33,18 @@ jobs:
 
       - name: Check result
         run: |
-          echo "crawler 실행 완료"
+          echo "cards.json 확인"
+          python -c "import json; data=json.load(open('cards.json', encoding='utf-8')); print('cards.json 카드 수:', len(data))"
 
       - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add .
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add cards.json
 
           git diff --cached --quiet || \
             git commit -m "Update card list"
