@@ -1,10 +1,13 @@
 import json
 import re
+import time
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 
-URL = "https://m.card-gorilla.com/card/credit/12"
+BASE_URL = "https://m.card-gorilla.com"
+LIST_URL = "https://m.card-gorilla.com/card/credit/12"
 
 
 def crawl_cards():
@@ -34,68 +37,190 @@ def crawl_cards():
         print("카드고릴라 접속")
 
         page.goto(
-            URL,
+            LIST_URL,
             wait_until="networkidle",
             timeout=60000
         )
 
         print("페이지 로딩 완료")
 
-        # 페이지 끝까지 스크롤
-        for _ in range(10):
 
-            page.evaluate(
-                "window.scrollTo(0, document.body.scrollHeight)"
-            )
-
-            page.wait_for_timeout(1000)
-
-        # 모든 링크 가져오기
-        links = page.locator("a").all()
-
-        print(
-            f"전체 링크 수: {len(links)}"
-        )
+        # ==================================================
+        # 1. 카드 상세 URL을 계속 수집
+        # ==================================================
 
         card_ids = set()
 
-        for link in links:
+        no_change_count = 0
 
-            try:
+        previous_count = 0
 
-                href = link.get_attribute("href")
+        while True:
 
-                if not href:
+            # 현재 페이지에 존재하는 카드 링크 수집
+            links = page.locator(
+                'a[href*="/card/detail/"]'
+            ).all()
+
+            for link in links:
+
+                try:
+
+                    href = link.get_attribute(
+                        "href"
+                    )
+
+                    if not href:
+                        continue
+
+                    match = re.search(
+                        r"/card/detail/(\d+)",
+                        href
+                    )
+
+                    if match:
+
+                        card_ids.add(
+                            match.group(1)
+                        )
+
+                except Exception:
                     continue
 
-                # 카드 상세 페이지 찾기
-                match = re.search(
-                    r"/card/detail/(\d+)",
-                    href
-                )
 
-                if match:
+            current_count = len(card_ids)
 
-                    card_id = match.group(1)
+            print(
+                f"현재 발견 카드: {current_count}개"
+            )
 
-                    card_ids.add(card_id)
 
-            except Exception:
+            # ==================================================
+            # 카드가 새로 발견됐는지 확인
+            # ==================================================
+
+            if current_count == previous_count:
+
+                no_change_count += 1
+
+            else:
+
+                no_change_count = 0
+
+                previous_count = current_count
+
+
+            # ==================================================
+            # 더보기 버튼 찾기
+            # ==================================================
+
+            clicked = False
+
+            buttons = page.locator(
+                "button"
+            ).all()
+
+            for button in buttons:
+
+                try:
+
+                    if not button.is_visible():
+                        continue
+
+                    text = button.inner_text().strip()
+
+                    if text in [
+                        "더보기",
+                        "더 보기",
+                        "다음",
+                        "다음 페이지",
+                        "카드 더보기"
+                    ]:
+
+                        print(
+                            f"'{text}' 버튼 클릭"
+                        )
+
+                        button.click(
+                            timeout=3000
+                        )
+
+                        page.wait_for_timeout(
+                            1500
+                        )
+
+                        clicked = True
+
+                        break
+
+                except Exception:
+                    continue
+
+
+            if clicked:
+
                 continue
 
+
+            # ==================================================
+            # 더보기 버튼이 없으면 스크롤
+            # ==================================================
+
+            old_height = page.evaluate(
+                "document.body.scrollHeight"
+            )
+
+            page.evaluate(
+                """
+                window.scrollTo(
+                    0,
+                    document.body.scrollHeight
+                )
+                """
+            )
+
+            page.wait_for_timeout(
+                1500
+            )
+
+            new_height = page.evaluate(
+                "document.body.scrollHeight"
+            )
+
+
+            # ==================================================
+            # 더 이상 변화가 없으면 종료
+            # ==================================================
+
+            if (
+                new_height == old_height
+                and no_change_count >= 3
+            ):
+
+                print(
+                    "새로운 카드가 더 이상 발견되지 않아 종료"
+                )
+
+                break
+
+
+        print()
         print(
-            f"발견한 카드 ID: {len(card_ids)}개"
+            f"전체 카드 ID: {len(card_ids)}개"
         )
 
-        # 카드 상세 페이지 방문
+
+        # ==================================================
+        # 2. 카드 상세 페이지에서 정보 수집
+        # ==================================================
+
         for index, card_id in enumerate(
             sorted(card_ids, key=int),
             start=1
         ):
 
             card_url = (
-                f"https://m.card-gorilla.com"
-                f"/card/detail/{card_id}"
+                f"{BASE_URL}/card/detail/{card_id}"
             )
 
             print(
@@ -111,43 +236,131 @@ def crawl_cards():
                     timeout=60000
                 )
 
-                page.wait_for_timeout(500)
+                page.wait_for_timeout(300)
 
-                # 페이지 제목
-                title = page.title()
 
-                # 카드명 추출
-                card_name = None
+                # ------------------------------------------
+                # 카드명 + 카드사
+                # ------------------------------------------
 
+                title_text = ""
+
+                # h1 우선
                 h1 = page.locator("h1")
 
                 if h1.count() > 0:
 
-                    card_name = (
+                    title_text = (
                         h1.first.inner_text()
                         .strip()
                     )
 
-                # h1이 없으면 title 사용
-                if not card_name:
 
-                    card_name = title
+                # h1이 없으면 페이지 title
+                if not title_text:
 
-                # title 정리
-                card_name = re.sub(
-                    r"\s*\|\s*카드고릴라.*$",
-                    "",
-                    card_name
-                ).strip()
+                    title_text = page.title()
 
-                if not card_name:
+                    title_text = re.sub(
+                        r"\s*\|\s*카드고릴라.*$",
+                        "",
+                        title_text
+                    ).strip()
+
+
+                if not title_text:
                     continue
+
+
+                # 상세 페이지 본문
+                body_text = page.locator(
+                    "body"
+                ).inner_text()
+
+
+                body_text = re.sub(
+                    r"\s+",
+                    " ",
+                    body_text
+                )
+
+
+                # ------------------------------------------
+                # 카드사 추출
+                #
+                # 예:
+                # 신한카드 Mr.Life · 신한카드
+                # ------------------------------------------
+
+                company = ""
+
+                pattern = (
+                    re.escape(title_text)
+                    + r"\s*·\s*([^\n]+)"
+                )
+
+                match = re.search(
+                    pattern,
+                    body_text
+                )
+
+                if match:
+
+                    company = (
+                        match.group(1)
+                        .strip()
+                    )
+
+
+                # ------------------------------------------
+                # 카드사 보완
+                # ------------------------------------------
+
+                if not company:
+
+                    companies = [
+                        "신한카드",
+                        "삼성카드",
+                        "현대카드",
+                        "KB국민카드",
+                        "롯데카드",
+                        "우리카드",
+                        "하나카드",
+                        "NH농협카드",
+                        "IBK기업은행",
+                        "BC 바로카드",
+                        "BC바로카드",
+                        "케이뱅크",
+                        "카카오뱅크",
+                        "토스뱅크",
+                        "전북은행",
+                        "광주은행",
+                        "제주은행",
+                        "Sh수협은행",
+                        "우체국",
+                        "SC제일은행",
+                        "BNK부산은행",
+                        "BNK경남은행",
+                        "DGB대구은행",
+                        "iM뱅크"
+                    ]
+
+                    for company_name in companies:
+
+                        if company_name in body_text:
+
+                            company = company_name
+
+                            break
+
 
                 cards.append({
                     "card_id": card_id,
-                    "card_name": card_name,
+                    "card_name": title_text,
+                    "company": company,
                     "card_url": card_url
                 })
+
 
             except Exception as e:
 
@@ -155,9 +368,14 @@ def crawl_cards():
                     f"카드 {card_id} 실패: {e}"
                 )
 
+
         browser.close()
 
-    # 중복 제거
+
+    # ==================================================
+    # 3. 중복 제거
+    # ==================================================
+
     unique_cards = {}
 
     for card in cards:
@@ -166,6 +384,7 @@ def crawl_cards():
             card["card_id"]
         ] = card
 
+
     return list(
         unique_cards.values()
     )
@@ -173,21 +392,24 @@ def crawl_cards():
 
 def save_cards(cards):
 
-    path = Path("cards.json")
+    path = Path(
+        "cards.json"
+    )
 
     with open(
         path,
         "w",
         encoding="utf-8"
-    ) as f:
+    ) as file:
 
         json.dump(
             cards,
-            f,
+            file,
             ensure_ascii=False,
             indent=2
         )
 
+    print()
     print(
         f"cards.json 저장 완료: {len(cards)}개"
     )
@@ -195,9 +417,9 @@ def save_cards(cards):
 
 if __name__ == "__main__":
 
-    print("=" * 50)
-    print("카드고릴라 카드 크롤링 시작")
-    print("=" * 50)
+    print("=" * 60)
+    print("카드고릴라 전체 카드 크롤링 시작")
+    print("=" * 60)
 
     cards = crawl_cards()
 
