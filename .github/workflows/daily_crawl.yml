@@ -2,52 +2,58 @@ name: Daily Card Crawl
 
 on:
   schedule:
-    # 매일 한국시간 오전 6시에 실행
-    # GitHub Actions는 UTC 기준
+    # 매일 한국시간 오전 6시
     - cron: "0 21 * * *"
 
-  # GitHub에서 수동으로 실행할 수 있게 함
   workflow_dispatch:
 
 jobs:
+
   crawl:
+
     runs-on: ubuntu-latest
 
     steps:
-      # 1. GitHub 저장소 가져오기
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Python 설치
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3. 필요한 라이브러리 설치
-      - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
 
-      # 4. 크롤러 실행
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+
       - name: Run crawler
         run: |
           python crawler.py
 
-      # 5. cards.json 변경사항 확인
-      - name: Check changes
-        run: |
-          git status
-          git diff -- cards.json
 
-      # 6. 변경된 cards.json GitHub에 저장
+      - name: Check result
+        run: |
+          echo "cards.json 확인"
+          cat cards.json
+
+
       - name: Commit and push
         run: |
+
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add cards.json
 
-          git diff --cached --quiet || git commit -m "Update card list"
+          git diff --cached --quiet || \
+            git commit -m "Update card list"
 
           git push
