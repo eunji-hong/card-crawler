@@ -28,7 +28,7 @@ async def run():
             {"id": "9", "name": "NH농협카드"}
         ]
 
-        print("🚀 카드고릴라 수집 시작...")
+        print("🚀 카드고릴라 수집 재시도...")
 
         for corp in corps:
             c_id = corp["id"]
@@ -41,44 +41,34 @@ async def run():
 
                 # 더보기 버튼 반복 클릭 (최대 20회)
                 for _ in range(20):
-                    # 현재 카드 개수 측정
-                    items_before = await page.query_selector_all(".card_list > li")
+                    # 현재 카드 리스트 수 파악
+                    items_before = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
                     count_before = len(items_before)
 
-                    # 카드 더보기 버튼 정확한 요소 찾기
-                    more_btn = await page.query_selector("a.lst_more")
-                    
-                    if not more_btn:
-                        # 대안 선택자
-                        more_btn = await page.query_selector(".btn_more a, div.btn_more")
+                    # 페이지 하단 스크롤
+                    await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    await page.wait_for_timeout(500)
 
+                    # 더보기 영역 감지 및 강제 이벤트 실행
+                    more_btn = await page.query_selector(".btn_more")
                     if more_btn and await more_btn.is_visible():
-                        # 버튼 위치로 스크롤 이동 후 클릭
-                        await more_btn.scroll_into_view_if_needed()
-                        await page.wait_for_timeout(300)
                         await page.evaluate("(el) => el.click()", more_btn)
 
-                        # 데이터 추가 로딩 대기 (최대 4초간 카드 수 증가 여부 체크)
-                        loaded = False
-                        for _ in range(8):
+                        # 카드 수 증가할 때까지 지연 대기
+                        for _ in range(10):
                             await page.wait_for_timeout(500)
-                            items_after = await page.query_selector_all(".card_list > li")
+                            items_after = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
                             if len(items_after) > count_before:
-                                loaded = True
                                 break
-                        
-                        # 클릭 후에도 개수가 늘어나지 않으면 종료
-                        if not loaded:
-                            break
                     else:
                         break
 
-                # 로드된 카드 데이터 추출
-                card_items = await page.query_selector_all(".card_list > li")
+                # 로드된 전체 카드 파싱
+                card_items = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
                 corp_added = 0
 
                 for item in card_items:
-                    name_elem = await item.query_selector(".card_name")
+                    name_elem = await item.query_selector(".card_name, span.card_name, p.name")
                     if name_elem:
                         name_text = await name_elem.inner_text()
                         card_name = name_text.strip()
