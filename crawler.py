@@ -1,4 +1,5 @@
 import asyncio
+import json
 from playwright.async_api import async_playwright
 
 
@@ -13,149 +14,234 @@ async def main():
             headless=True
         )
 
-        page = await browser.new_page()
-
-        print("=" * 70)
-        print("CARD GORILLA JS 분석")
-        print("=" * 70)
-
-        await page.goto(
-            URL,
-            wait_until="networkidle",
-            timeout=60000
+        page = await browser.new_page(
+            viewport={
+                "width": 1440,
+                "height": 1200
+            }
         )
 
-        await page.wait_for_timeout(3000)
+        print("=" * 70)
+        print("CARD GORILLA API 분석")
+        print("=" * 70)
 
         # --------------------------------------------------
-        # 모든 script src
+        # 모든 응답 감시
         # --------------------------------------------------
 
-        scripts = await page.locator(
-            "script[src]"
-        ).evaluate_all(
-            """
-            scripts => scripts.map(s => s.src)
-            """
-        )
+        async def response_handler(response):
 
-        print()
-        print("JS 파일 수:", len(scripts))
+            request = response.request
 
-        for src in scripts:
+            if request.resource_type not in [
+                "xhr",
+                "fetch"
+            ]:
+                return
 
-            if "card-gorilla.com/js/" not in src:
-                continue
+            url = response.url
 
             print()
-            print("=" * 70)
-            print("JS:", src)
-            print("=" * 70)
+            print("-" * 70)
+            print("REQUEST")
+            print(request.method)
+            print(url)
 
+            # GET이면 query string도 확인
+            if request.method == "GET":
+                print("GET URL:", url)
+
+            # POST이면 body 확인
+            if request.method == "POST":
+
+                try:
+                    print(
+                        "POST DATA:",
+                        request.post_data
+                    )
+                except Exception:
+                    pass
+
+            # 응답 확인
             try:
 
-                # 브라우저의 fetch를 이용해서 JS 가져오기
-                content = await page.evaluate(
-                    """
-                    async (url) => {
-                        const response = await fetch(url);
-                        return await response.text();
-                    }
-                    """,
-                    src
+                content_type = response.headers.get(
+                    "content-type",
+                    ""
                 )
 
                 print(
-                    "JS 크기:",
-                    len(content)
+                    "STATUS:",
+                    response.status
                 )
 
-                # ------------------------------------------
-                # 카드 목록 관련 키워드
-                # ------------------------------------------
+                print(
+                    "CONTENT-TYPE:",
+                    content_type
+                )
 
-                keywords = [
-                    "cardList",
-                    "card_list",
-                    "cardlist",
-                    "cardData",
-                    "card_data",
-                    "searchCard",
-                    "search_card",
-                    "getCard",
-                    "get_card",
-                    "more",
-                    "moreList",
-                    "loadMore",
-                    "page",
-                    "pageSize",
-                    "limit",
-                    "offset",
-                    "axios",
-                    "$axios",
-                    "/api/",
-                    "/search/"
-                ]
+                # JSON만 확인
+                if (
+                    "json" in content_type.lower()
+                    or "javascript" not in content_type.lower()
+                ):
 
-                found = set()
+                    try:
 
-                for keyword in keywords:
+                        text = await response.text()
 
-                    start = 0
-
-                    while True:
-
-                        index = content.find(
-                            keyword,
-                            start
+                        # 너무 긴 응답은 앞부분만
+                        print(
+                            "RESPONSE:",
+                            text[:5000]
                         )
 
-                        if index == -1:
-                            break
+                    except Exception as e:
 
-                        found.add(index)
-
-                        start = index + len(keyword)
-
-                print(
-                    "관련 코드 발견:",
-                    len(found)
-                )
-
-                # ------------------------------------------
-                # 발견된 부분 앞뒤 500자 출력
-                # ------------------------------------------
-
-                for index in sorted(found)[:30]:
-
-                    print()
-                    print("-" * 70)
-
-                    start = max(
-                        0,
-                        index - 500
-                    )
-
-                    end = min(
-                        len(content),
-                        index + 1000
-                    )
-
-                    print(
-                        content[start:end]
-                    )
+                        print(
+                            "응답 읽기 실패:",
+                            e
+                        )
 
             except Exception as e:
 
                 print(
-                    "JS 분석 실패:",
+                    "응답 분석 실패:",
                     e
                 )
 
+
+        page.on(
+            "response",
+            lambda response: asyncio.create_task(
+                response_handler(response)
+            )
+        )
+
+
+        # --------------------------------------------------
+        # 페이지 접속
+        # --------------------------------------------------
+
+        print()
+        print("페이지 접속")
+
+        await page.goto(
+            URL,
+            wait_until="domcontentloaded",
+            timeout=60000
+        )
+
+        print(
+            "HTML 로딩 완료"
+        )
+
+        # Vue 초기화 기다리기
+        await page.wait_for_timeout(
+            10000
+        )
+
+
+        # --------------------------------------------------
+        # 현재 URL / 제목
+        # --------------------------------------------------
+
         print()
         print("=" * 70)
-        print("분석 완료")
+        print("페이지 정보")
         print("=" * 70)
+
+        print(
+            "URL:",
+            page.url
+        )
+
+        print(
+            "TITLE:",
+            await page.title()
+        )
+
+
+        # --------------------------------------------------
+        # Vue 데이터 확인
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("Vue 상태 확인")
+        print("=" * 70)
+
+        vue_info = await page.evaluate(
+            """
+            () => {
+
+                const app =
+                    document.querySelector("#q-app");
+
+                return {
+                    exists: !!app,
+                    text: app
+                        ? app.innerText.substring(0, 3000)
+                        : ""
+                };
+            }
+            """
+        )
+
+        print(
+            json.dumps(
+                vue_info,
+                ensure_ascii=False,
+                indent=2
+            )
+        )
+
+
+        # --------------------------------------------------
+        # 카드 링크
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("현재 카드 링크")
+        print("=" * 70)
+
+        links = await page.locator(
+            'a[href*="/card/detail/"]'
+        ).evaluate_all(
+            """
+            elements => [
+                ...new Set(
+                    elements.map(a => a.href)
+                )
+            ]
+            """
+        )
+
+        print(
+            "카드 링크:",
+            len(links)
+        )
+
+        for link in links:
+
+            print(
+                link
+            )
+
+
+        # --------------------------------------------------
+        # 충분히 기다린 후 종료
+        # --------------------------------------------------
+
+        print()
+        print("=" * 70)
+        print("API 분석 종료")
+        print("=" * 70)
+
+        await page.wait_for_timeout(
+            3000
+        )
 
         await browser.close()
 
