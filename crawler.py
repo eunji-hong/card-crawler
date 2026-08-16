@@ -1,100 +1,279 @@
+import requests
+from bs4 import BeautifulSoup
 import json
-import asyncio
-from playwright.async_api import async_playwright
+import re
+import time
+from pathlib import Path
 
-async def run():
-    all_cards = []
-    card_index = 1
-    
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-setuid-sandbox"]
-        )
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={"width": 1400, "height": 900}
-        )
-        page = await context.new_page()
 
-        corps = [
-            {"id": "1", "name": "신한카드"},
-            {"id": "2", "name": "삼성카드"},
-            {"id": "3", "name": "KB국민카드"},
-            {"id": "4", "name": "현대카드"},
-            {"id": "5", "name": "롯데카드"},
-            {"id": "7", "name": "하나카드"},
-            {"id": "8", "name": "우리카드"},
-            {"id": "9", "name": "NH농협카드"}
+BASE_URL = "https://m.card-gorilla.com"
+
+# 카드 목록 페이지
+LIST_URL = "https://m.card-gorilla.com/card/credit/12"
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/139.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+}
+
+
+session = requests.Session()
+session.headers.update(HEADERS)
+
+
+def get_soup(url):
+    """웹페이지 가져오기"""
+
+    response = session.get(
+        url,
+        timeout=20
+    )
+
+    response.raise_for_status()
+
+    return BeautifulSoup(
+        response.text,
+        "html.parser"
+    )
+
+
+def get_card_ids():
+    """카드 목록에서 카드 상세 페이지 ID 수집"""
+
+    print("카드 목록 페이지 접속")
+
+    soup = get_soup(LIST_URL)
+
+    card_ids = set()
+
+    # 모든 링크 검사
+    for link in soup.find_all("a", href=True):
+
+        href = link["href"]
+
+        # /card/detail/숫자 형태만 찾는다
+        match = re.search(
+            r"/card/detail/(\d+)",
+            href
+        )
+
+        if match:
+            card_id = match.group(1)
+            card_ids.add(card_id)
+
+    print(f"발견한 카드 ID: {len(card_ids)}개")
+
+    return sorted(
+        card_ids,
+        key=int
+    )
+
+
+def get_card_info(card_id):
+    """카드 상세 페이지에서 카드명/카드사 추출"""
+
+    url = f"{BASE_URL}/card/detail/{card_id}"
+
+    try:
+
+        soup = get_soup(url)
+
+        # 페이지 전체 텍스트
+        text = soup.get_text(
+            " ",
+            strip=True
+        )
+
+        text = re.sub(
+            r"\s+",
+            " ",
+            text
+        )
+
+        # --------------------------------------------------
+        # 카드명
+        # --------------------------------------------------
+
+        card_name = None
+
+        # 모바일 카드고릴라 상세 페이지의 첫 번째 h1
+        h1 = soup.find("h1")
+
+        if h1:
+            card_name = h1.get_text(
+                " ",
+                strip=True
+            )
+
+        # h1이 없으면 title 사용
+        if not card_name:
+
+            title = soup.find("title")
+
+            if title:
+
+                card_name = title.get_text(
+                    " ",
+                    strip=True
+                )
+
+                card_name = re.sub(
+                    r"\s*\|\s*카드고릴라.*$",
+                    "",
+                    card_name
+                ).strip()
+
+        if not card_name:
+            return None
+
+
+        # --------------------------------------------------
+        # 카드사
+        # --------------------------------------------------
+
+        company = None
+
+        # 카드 상세 페이지 상단의
+        #
+        # 카드명 · 카드사
+        #
+        # 형태를 찾는다.
+
+        # 대표적인 카드사 목록
+        companies = [
+            "신한카드",
+            "삼성카드",
+            "현대카드",
+            "KB국민카드",
+            "롯데카드",
+            "우리카드",
+            "하나카드",
+            "NH농협카드",
+            "IBK기업은행",
+            "BC카드",
+            "케이뱅크",
+            "카카오뱅크",
+            "토스뱅크",
+            "전북은행",
+            "광주은행",
+            "제주은행",
+            "수협은행",
+            "우체국",
+            "iM뱅크",
         ]
 
-        print("🚀 카드고릴라 수집 재시도...")
+        # 카드명 근처에서 카드사 찾기
+        for name in companies:
 
-        for corp in corps:
-            c_id = corp["id"]
-            c_name = corp["name"]
-            target_url = f"https://www.card-gorilla.com/search/card?corp={c_id}"
+            if name in text:
 
-            try:
-                await page.goto(target_url, wait_until="networkidle", timeout=30000)
-                await page.wait_for_timeout(1500)
+                company = name
+                break
 
-                # 더보기 버튼 반복 클릭 (최대 20회)
-                for _ in range(20):
-                    # 현재 카드 리스트 수 파악
-                    items_before = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
-                    count_before = len(items_before)
+        if not company:
+            company = "기타"
 
-                    # 페이지 하단 스크롤
-                    await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    await page.wait_for_timeout(500)
 
-                    # 더보기 영역 감지 및 강제 이벤트 실행
-                    more_btn = await page.query_selector(".btn_more")
-                    if more_btn and await more_btn.is_visible():
-                        await page.evaluate("(el) => el.click()", more_btn)
+        return {
+            "card_id": card_id,
+            "card_name": card_name,
+            "company": company,
+            "card_url": url
+        }
 
-                        # 카드 수 증가할 때까지 지연 대기
-                        for _ in range(10):
-                            await page.wait_for_timeout(500)
-                            items_after = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
-                            if len(items_after) > count_before:
-                                break
-                    else:
-                        break
+    except Exception as e:
 
-                # 로드된 전체 카드 파싱
-                card_items = await page.query_selector_all(".card_list > li, ul.lst > li, .lst_type1 > li")
-                corp_added = 0
+        print(
+            f"[ERROR] 카드 {card_id}: {e}"
+        )
 
-                for item in card_items:
-                    name_elem = await item.query_selector(".card_name, span.card_name, p.name")
-                    if name_elem:
-                        name_text = await name_elem.inner_text()
-                        card_name = name_text.strip()
+        return None
 
-                        if card_name and card_name not in ["카드 더보기", "자세히 보기"]:
-                            if not any(c["name"] == card_name and c["company"] == c_name for c in all_cards):
-                                all_cards.append({
-                                    "id": str(card_index),
-                                    "name": card_name,
-                                    "company": c_name
-                                })
-                                card_index += 1
-                                corp_added += 1
 
-                print(f"[{c_name}] 수집 완료: {corp_added}개 (누적 {len(all_cards)}개)")
+def crawl_cards():
 
-            except Exception as e:
-                print(f"[{c_name}] 에러 발생: {e}")
+    # 1. 목록에서 카드 ID 수집
+    card_ids = get_card_ids()
 
-        await browser.close()
+    cards = []
 
-    return all_cards
+    # 2. 각각의 카드 상세 페이지 방문
+    for index, card_id in enumerate(
+        card_ids,
+        start=1
+    ):
+
+        print(
+            f"[{index}/{len(card_ids)}] "
+            f"카드 {card_id} 수집 중..."
+        )
+
+        card = get_card_info(
+            card_id
+        )
+
+        if card:
+
+            cards.append(card)
+
+        # 서버에 너무 빠르게 요청하지 않도록
+        time.sleep(0.3)
+
+
+    # 카드 ID 중복 제거
+    unique_cards = {}
+
+    for card in cards:
+
+        unique_cards[
+            card["card_id"]
+        ] = card
+
+
+    return list(
+        unique_cards.values()
+    )
+
+
+def save_cards(cards):
+
+    file_path = Path(
+        "cards.json"
+    )
+
+    with open(
+        file_path,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            cards,
+            file,
+            ensure_ascii=False,
+            indent=2
+        )
+
 
 if __name__ == "__main__":
-    cards = asyncio.run(run())
-    print(f"\n🎉 총 {len(cards)}개 카드 데이터 수집 완료!")
-    
-    with open("cards.json", "w", encoding="utf-8") as f:
-        json.dump(cards, f, ensure_ascii=False, indent=2)
+
+    print("=" * 50)
+    print("카드고릴라 카드 크롤링 시작")
+    print("=" * 50)
+
+    cards = crawl_cards()
+
+    print()
+    print(
+        f"총 {len(cards)}개 카드 수집 완료"
+    )
+
+    save_cards(cards)
+
+    print(
+        "cards.json 저장 완료"
+    )
