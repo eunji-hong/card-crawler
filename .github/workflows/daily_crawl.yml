@@ -33,7 +33,10 @@ jobs:
 
       - name: Check result
         run: |
+          echo "======================================"
           echo "cards.json 확인"
+          echo "======================================"
+
           python -c "import json; data=json.load(open('cards.json', encoding='utf-8')); print('cards.json 카드 수:', len(data))"
 
       - name: Commit and push
