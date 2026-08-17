@@ -16,10 +16,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/13/card_img/28201/13card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 23만원 이상 이용 시 19만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 생활요금 자동납부 최대 4만원 받기 납부기간 : 2026.8.1 ~ 2026.9.30 추가로 해외 가맹점 이용 시 2만원/30만원/50만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 마지막으로 새로워진 신한 슈퍼SOL 설치하고 최대 2.1만원 상당 혜택 받기 ! 혜택 자세히 보기 이벤트 카드 연 최대 60만원 할인 Mr.Life 보기 통신·구독·멤버십 최대 20% 적립 처음(ANNIVERSE) 보기 직접 고른 주유소 10% 할인 Deep Oil 보기 일상생활비 0.5% ~ 3% 적립 Point Plan 보기 알리익스프레스 10% 할인 알리익스프레스 신한카드 보기 전월실적 및 할인한도 등은 아래 '유의사항' 참고",
-        "discount_type": "percent",
-        "discount_value": 20
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -31,8 +31,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/49/card_img/42288/49card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -47,9 +47,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/106/card_img/20264/106card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차 기간 내 동의 및 혜택지급일까지 유지 추가이용 시 최대 30만원 캐시백 이용 기간 : 2026.8.1 ~ 2026.9.15 대상카드로 구간별 이용금액 달성 시 추가 캐시백 해외 이용 이벤트 참여 시 최대 30만원 캐시백 이벤트 기간 : 2026.8.1 ~ 2026.9.30 대상카드로 구간별 이용금액 달성 시 추가 캐시백 자동납부 신청 시 최대 4만원 상품권 등록 기간 : 2026.8.1 ~ 2026.8.31 생활요금 자동납부 신청하고 최초 납부 시 자동이체 신청하기 자동이체 신청하기 이벤트 카드 KB pay 10% 할인, 음식점,편의점 10% 할인 KB국민 My WE:SH 카드 전월실적 40만원 이상 보기 주유소·충전소 리터당 60원 할인,",
-        "discount_type": "percent",
-        "discount_value": 10
+        "description": "주유 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -61,10 +61,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2885/card_img/44212/2885card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 (예) 삼성 iD SELECT ON 카드로 8/10에 음식점 10만원 결제 후 1만원 할인을 적용 받은 경우 혜택 제공 할인받은 내역은 삼성카드 앱 또는 모니모 '내 카드 혜택'에서 확인 가능 &bull; 할인 혜택은 승인일 기준으로 적용 대상 카드 혜택 삼성 iD SELECT ALL 카드 &bull; 아파트 관리비/통신 10% 할인 &bull; 교육 10% 할인 &bull; 국내 가맹점 0.7% 할인 &bull; 음식점/편의점/할인점/주유 7% 할인 &bull; 온라인쇼핑몰/의료/배달앱 7% 할인 * 전월실적 40만원 이상 시 제공",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -76,8 +76,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/184/card_img/45716/184card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -106,10 +106,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2441/card_img/37123/2441card_3.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "기간 내 동의 및 혜택지급일까지 유지 추가이용 시 최대 30만원 캐시백 이용 기간 : 2026.8.1 ~ 2026.9.15 대상카드로 구간별 이용금액 달성 시 추가 캐시백 해외 이용 이벤트 참여 시 최대 30만원 캐시백 이벤트 기간 : 2026.8.1 ~ 2026.9.30 대상카드로 구간별 이용금액 달성 시 추가 캐시백 자동납부 신청 시 최대 4만원 상품권 등록 기간 : 2026.8.1 ~ 2026.8.31 생활요금 자동납부 신청하고 최초 납부 시 자동이체 신청하기 자동이체 신청하기 이벤트 카드 KB pay 10% 할인, 음식점,편의점 10% 할인 KB국민 My WE:SH 카드 전월실적 40만원 이상 보기 주유소·충전소 리터당 60원 할인,",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -121,10 +121,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2881/card_img/49416/2881card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "백화점, 프리미엄 아울렛 10% 청구 할인 알파벳카드S 보기 뷰티, 헬스, 패션 10% 청구 할인 알파벳카드B 보기 교육, 병원 10% 청구 할인 알파벳카드H 보기 주유소, 충전소, 알파벳카드O : 국내전용/국내외겸용( Visa Platinum/ Amex Platinum) 15,000원 전월 이용 금액 40만원 이상 시 주유소, 충전소, 차량 정비소, 세차장 10% 청구 할인",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -136,10 +136,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2986/card_img/48785/2986card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 결제하면 5만원 모바일 상품권 제공! 이벤트 기간 2026.8.1 ~ 2026.9.30 이벤트 대상 &bull;이벤트1의 행사조건을 충족한 회원 &bull; 삼성 iD SELECT UP 카드의 해외겸용(VISA)카드로 일시불 및 할부 합산 30만원 이상 결제한 회원 혜택 이마트신세계 모바일 상품권 5만원 제공(1인 1회) &bull; 이벤트 기간 동안 삼성 iD SELECT UP 카드(해외겸용 VISA)로 일시불 및 할부 합산 30만원 이상 이용시 5만원 상당 상품권 제공 대상 카드 혜택 삼성 iD SELECT UP 카드 SELECT 서비스(택1) &bull; 의료 20% 할인 (병원/약국 20% 할인) &bull; 생활 영역 10% 할인(보험/주유/이동통신 10% 할인)",
-        "discount_type": "percent",
-        "discount_value": 20
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -166,10 +166,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2964/card_img/48106/2964card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "기간 내 동의 및 혜택지급일까지 유지 추가이용 시 최대 30만원 캐시백 이용 기간 : 2026.8.1 ~ 2026.9.15 대상카드로 구간별 이용금액 달성 시 추가 캐시백 해외 이용 이벤트 참여 시 최대 30만원 캐시백 이벤트 기간 : 2026.8.1 ~ 2026.9.30 대상카드로 구간별 이용금액 달성 시 추가 캐시백 자동납부 신청 시 최대 4만원 상품권 등록 기간 : 2026.8.1 ~ 2026.8.31 생활요금 자동납부 신청하고 최초 납부 시 자동이체 신청하기 자동이체 신청하기 이벤트 카드 KB pay 10% 할인, 음식점,편의점 10% 할인 KB국민 My WE:SH 카드 전월실적 40만원 이상 보기 주유소·충전소 리터당 60원 할인,",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -181,10 +181,10 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2759/card_img/37240/2759card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "23만원 이상 이용 시 19만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 생활요금 자동납부 최대 4만원 받기 납부기간 : 2026.8.1 ~ 2026.9.30 추가로 해외 가맹점 이용 시 2만원/30만원/50만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 마지막으로 새로워진 신한 슈퍼SOL 설치하고 최대 2.1만원 상당 혜택 받기 ! 혜택 자세히 보기 이벤트 카드 연 최대 60만원 할인 Mr.Life 보기 통신·구독·멤버십 최대 20% 적립 처음(ANNIVERSE) 보기 직접 고른 주유소 10% 할인 Deep Oil 보기 일상생활비 0.5% ~ 3% 적립 Point Plan 보기 알리익스프레스 10% 할인 알리익스프레스 신한카드 보기 전월실적 및 할인한도 등은 아래 '유의사항' 참고",
-        "discount_type": "percent",
-        "discount_value": 20
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -226,10 +226,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2970/card_img/48200/2970card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "기간 내 동의 및 혜택지급일까지 유지 추가이용 시 최대 30만원 캐시백 이용 기간 : 2026.8.1 ~ 2026.9.15 대상카드로 구간별 이용금액 달성 시 추가 캐시백 해외 이용 이벤트 참여 시 최대 30만원 캐시백 이벤트 기간 : 2026.8.1 ~ 2026.9.30 대상카드로 구간별 이용금액 달성 시 추가 캐시백 자동납부 신청 시 최대 4만원 상품권 등록 기간 : 2026.8.1 ~ 2026.8.31 생활요금 자동납부 신청하고 최초 납부 시 자동이체 신청하기 자동이체 신청하기 이벤트 카드 KB pay 10% 할인, 음식점,편의점 10% 할인 KB국민 My WE:SH 카드 전월실적 40만원 이상 보기 주유소·충전소 리터당 60원 할인,",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -241,10 +241,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2930/card_img/46558/2930card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 기간 내 동의 및 혜택지급일까지 유지 추가이용 시 최대 30만원 캐시백 이용 기간 : 2026.8.1 ~ 2026.9.15 대상카드로 구간별 이용금액 달성 시 추가 캐시백 해외 이용 이벤트 참여 시 최대 30만원 캐시백 이벤트 기간 : 2026.8.1 ~ 2026.9.30 대상카드로 구간별 이용금액 달성 시 추가 캐시백 자동납부 신청 시 최대 4만원 상품권 등록 기간 : 2026.8.1 ~ 2026.8.31 생활요금 자동납부 신청하고 최초 납부 시 자동이체 신청하기 자동이체 신청하기 이벤트 카드 KB pay 10% 할인, 음식점,편의점 10% 할인 KB국민 My WE:SH 카드 전월실적 40만원 이상 보기 주유소·충전소 리터당 60원 할인,",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -256,10 +256,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2969/card_img/49235/2969card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "백화점, 프리미엄 아울렛 10% 청구 할인 알파벳카드S 보기 뷰티, 헬스, 패션 10% 청구 할인 알파벳카드B 보기 교육, 병원 10% 청구 할인 알파벳카드H 보기 주유소, 충전소, 알파벳카드O : 국내전용/국내외겸용( Visa Platinum/ Amex Platinum) 15,000원 전월 이용 금액 40만원 이상 시 주유소, 충전소, 차량 정비소, 세차장 10% 청구 할인",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -271,8 +271,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2835/card_img/41600/2835card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -286,8 +286,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/52/card_img/27708/52card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -301,8 +301,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2559/card_img/45648/2559card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -331,8 +331,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2676/card_img/32887/2676card_2.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -361,10 +361,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2886/card_img/44215/2886card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "(예) 삼성 iD SELECT ON 카드로 8/10에 음식점 10만원 결제 후 1만원 할인을 적용 받은 경우 혜택 제공 할인받은 내역은 삼성카드 앱 또는 모니모 '내 카드 혜택'에서 확인 가능 &bull; 할인 혜택은 승인일 기준으로 적용 대상 카드 혜택 삼성 iD SELECT ALL 카드 &bull; 아파트 관리비/통신 10% 할인 &bull; 교육 10% 할인 &bull; 국내 가맹점 0.7% 할인 &bull; 음식점/편의점/할인점/주유 7% 할인 &bull; 온라인쇼핑몰/의료/배달앱 7% 할인 * 전월실적 40만원 이상 시 제공",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -392,7 +392,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2880/card_img/49415/2880card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차 백화점, 프리미엄 아울렛 10% 청구 할인 알파벳카드S 보기 뷰티, 헬스, 패션 10% 청구 할인 알파벳카드B 보기 교육, 병원 10% 청구 할인 알파벳카드H 보기 주유소, 충전소, 알파벳카드O : 국내전용/국내외겸용( Visa Platinum/ Amex Platinum) 15,000원 전월 이용 금액 40만원 이상 시 주유소, 충전소, 차량 정비소, 세차장 10% 청구 할인",
+        "description": "주유소, 충전소 10% 청구 할인",
         "discount_type": "percent",
         "discount_value": 10
       }
@@ -406,10 +406,10 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2666/card_img/32452/2666card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "23만원 이상 이용 시 19만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 생활요금 자동납부 최대 4만원 받기 납부기간 : 2026.8.1 ~ 2026.9.30 추가로 해외 가맹점 이용 시 2만원/30만원/50만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 마지막으로 새로워진 신한 슈퍼SOL 설치하고 최대 2.1만원 상당 혜택 받기 ! 혜택 자세히 보기 이벤트 카드 연 최대 60만원 할인 Mr.Life 보기 통신·구독·멤버십 최대 20% 적립 처음(ANNIVERSE) 보기 직접 고른 주유소 10% 할인 Deep Oil 보기 일상생활비 0.5% ~ 3% 적립 Point Plan 보기 알리익스프레스 10% 할인 알리익스프레스 신한카드 보기 전월실적 및 할인한도 등은 아래 '유의사항' 참고",
-        "discount_type": "percent",
-        "discount_value": 20
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -422,9 +422,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/39/card_img/31864/39card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차 23만원 이상 이용 시 19만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 생활요금 자동납부 최대 4만원 받기 납부기간 : 2026.8.1 ~ 2026.9.30 추가로 해외 가맹점 이용 시 2만원/30만원/50만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 마지막으로 새로워진 신한 슈퍼SOL 설치하고 최대 2.1만원 상당 혜택 받기 ! 혜택 자세히 보기 이벤트 카드 연 최대 60만원 할인 Mr.Life 보기 통신·구독·멤버십 최대 20% 적립 처음(ANNIVERSE) 보기 직접 고른 주유소 10% 할인 Deep Oil 보기 일상생활비 0.5% ~ 3% 적립 Point Plan 보기 알리익스프레스 10% 할인 알리익스프레스 신한카드 보기 전월실적 및 할인한도 등은 아래 '유의사항' 참고",
+        "description": "4개정유사 10% 할인",
         "discount_type": "percent",
-        "discount_value": 20
+        "discount_value": 10
       }
     },
     {
@@ -496,10 +496,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2967/card_img/49233/2967card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "백화점, 프리미엄 아울렛 10% 청구 할인 알파벳카드S 보기 뷰티, 헬스, 패션 10% 청구 할인 알파벳카드B 보기 교육, 병원 10% 청구 할인 알파벳카드H 보기 주유소, 충전소, 알파벳카드O : 국내전용/국내외겸용( Visa Platinum/ Amex Platinum) 15,000원 전월 이용 금액 40만원 이상 시 주유소, 충전소, 차량 정비소, 세차장 10% 청구 할인",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -526,8 +526,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2657/card_img/32434/2657card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -556,8 +556,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/8/card_img/49476/8card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -571,10 +571,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2879/card_img/49414/2879card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "백화점, 프리미엄 아울렛 10% 청구 할인 알파벳카드S 보기 뷰티, 헬스, 패션 10% 청구 할인 알파벳카드B 보기 교육, 병원 10% 청구 할인 알파벳카드H 보기 주유소, 충전소, 알파벳카드O : 국내전용/국내외겸용( Visa Platinum/ Amex Platinum) 15,000원 전월 이용 금액 40만원 이상 시 주유소, 충전소, 차량 정비소, 세차장 10% 청구 할인",
-        "discount_type": "percent",
-        "discount_value": 10
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -593,6 +593,21 @@
       }
     },
     {
+      "card_id": 1909,
+      "card_name": "THE 1 (스카이패스)",
+      "card_company": "삼성카드",
+      "brand": "AMEX",
+      "category": "신용",
+      "card_type": "마일리지형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1909/card_img/28087/1909card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 2779,
       "card_name": "IBK포인트(신용)",
       "card_company": "IBK기업은행",
@@ -603,21 +618,6 @@
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 1909,
-      "card_name": "THE 1 (스카이패스)",
-      "card_company": "삼성카드",
-      "brand": "AMEX",
-      "category": "신용",
-      "card_type": "마일리지형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1909/card_img/28087/1909card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
         "discount_type": null,
         "discount_value": null
       }
@@ -706,10 +706,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2831/card_img/40882/2831card.jpg",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "23만원 이상 이용 시 19만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 생활요금 자동납부 최대 4만원 받기 납부기간 : 2026.8.1 ~ 2026.9.30 추가로 해외 가맹점 이용 시 2만원/30만원/50만원 받기 이용 기간 : 2026.8.1 ~ 2026.9.30 마지막으로 새로워진 신한 슈퍼SOL 설치하고 최대 2.1만원 상당 혜택 받기 ! 혜택 자세히 보기 이벤트 카드 연 최대 60만원 할인 Mr.Life 보기 통신·구독·멤버십 최대 20% 적립 처음(ANNIVERSE) 보기 직접 고른 주유소 10% 할인 Deep Oil 보기 일상생활비 0.5% ~ 3% 적립 Point Plan 보기 알리익스프레스 10% 할인 알리익스프레스 신한카드 보기 전월실적 및 할인한도 등은 아래 '유의사항' 참고",
-        "discount_type": "percent",
-        "discount_value": 20
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -721,8 +721,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2482/card_img/28405/2482card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -841,8 +841,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2687/card_img/33239/2687card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -953,21 +953,6 @@
       }
     },
     {
-      "card_id": 2938,
-      "card_name": "현대카드MY BUSINESS M F&B",
-      "card_company": "현대카드",
-      "brand": "VISA",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2938/card_img/46988/2938card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "국내외 가맹점 1.5% 적립 현대카드MY BUSINESS M F&B 보기 주유/LPG/전기차 충전,이동통신 요금 5% 적립 - 전월 이용 금액 100만원 이상 시 주유/LPG/전기차 충전, 이동통신 요금, 전기요금, 도시가스 요금, 4대 보험 5% M포인트 적립(대상점 통합해 월 2만 M포인트 적립 한도) 현대카드MY BUSINESS M E-seller : 국내전용/국내외겸용(Visa Platinum/Amex Platinum 50,000원",
-        "discount_type": "percent",
-        "discount_value": 1.5
-      }
-    },
-    {
       "card_id": 716,
       "card_name": "메리어트 본보이™ 더 베스트 신한카드",
       "card_company": "신한카드",
@@ -975,6 +960,21 @@
       "category": "신용",
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/716/card_img/22190/716card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 2938,
+      "card_name": "현대카드MY BUSINESS M F&B",
+      "card_company": "현대카드",
+      "brand": "VISA",
+      "category": "신용",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2938/card_img/46988/2938card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -998,6 +998,21 @@
       }
     },
     {
+      "card_id": 2807,
+      "card_name": "신한카드 The BEST-XO",
+      "card_company": "신한카드",
+      "brand": "Mastercard",
+      "category": "신용",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2807/card_img/45759/2807card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 2305,
       "card_name": "별다줄카드",
       "card_company": "NH농협카드",
@@ -1008,21 +1023,6 @@
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2807,
-      "card_name": "신한카드 The BEST-XO",
-      "card_company": "신한카드",
-      "brand": "Mastercard",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2807/card_img/45759/2807card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
         "discount_type": null,
         "discount_value": null
       }
@@ -1142,9 +1142,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2728/card_img/36134/2728card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "모든 주유소 최대 10% 할인",
+        "discount_type": "percent",
+        "discount_value": 10
       }
     },
     {
@@ -1171,10 +1171,10 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2985/card_img/49104/2985card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 신규회원 연회비 캐시백 이벤트 혜택 기간 내 현대카드 홈페이지 및 앱에서 대상 카드 신규 발급 후 조건 충족 시 발급 첫해 연회비 캐시백 대상 · 현대카드 최초 발급 및 재가입(탈회 후 1년 초과하여 발급)회원 · 마케팅 수신 동의 STEP 1 현대카드 홈페이지 및 앱에서 카드 신청 STEP 2 마케팅 수신 동의 STEP 3 발급 다음 달부터 3개월 이내 캐시백 제공(결제 계좌 입금) 기간 2026. 8. 1 ~ 2026. 8. 31(카드 신청일 기준) 대상 카드 현대카드 ZERO Up(할인형), 현대카드 ZERO Up(포인트형) 혜택 제공일 발급 다음 달 30일까지 조건 충족 후 유지 시 발급 다음 달 부터 3개월 이내 본인 명의 결제 계좌로 입금 예시) 2026년 8월 발급 후 2026년 9월 30일까지 조건 충족 시 2026년 11월 30일경 입금 신청 방법 · 홈페이지 > 카드 > 카드신청 · 앱 > 메뉴(좌측 상단) > 카드 신청 확인해 주세요 대상카드 연회비 현대카드 ZERO UP(할인형): 국내전용/국내외겸용(Visa Platinum/Amex Platinum) 30,000원 현대카드 ZERO UP(포인트형): 국내전용/국내외겸용(Visa Platinum/Amex Platinum) 30,000원 현대카드 ZERO UP(할인형) 실적 한도 제한 없이 국내외 가맹점 0.8% 청구 할인 온라인몰, 대형마트, 교육, 주유, 이동통신 요금 10만원 이상 결제 시 1.6% 청구 할인 현대카드 ZERO UP(포인트형) 실적 한도 제한 없이 국내외 가맹점 1.2% 적립 온라인몰, 대형마트, 교육, 주유, 이동통신 요금 10만원 이상 결제 시 2.4% 적립 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 상품설명서를 통해 확인 가능",
-        "discount_type": "percent",
-        "discount_value": 0.8
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -1216,8 +1216,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/16/card_img/28929/16card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1246,8 +1246,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2998/card_img/49768/2998card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1283,6 +1283,21 @@
       }
     },
     {
+      "card_id": 15,
+      "card_name": "신한카드 The CLASSIC+",
+      "card_company": "신한카드",
+      "brand": "AMEX",
+      "category": "신용",
+      "card_type": "마일리지형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/15/card_img/49008/15card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 2669,
       "card_name": "현대카드 M",
       "card_company": "현대카드",
@@ -1293,21 +1308,6 @@
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 15,
-      "card_name": "신한카드 The CLASSIC+",
-      "card_company": "신한카드",
-      "brand": "AMEX",
-      "category": "신용",
-      "card_type": "마일리지형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/15/card_img/49008/15card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
         "discount_type": null,
         "discount_value": null
       }
@@ -1382,9 +1382,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/133/card_img/20362/133card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전 주유소/충전소 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -1412,7 +1412,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2942/card_img/49835/2942card_3.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차 20만원 이상 이용 시 10만원 캐시백 * GS칼텍스 '에너지플러스 앱'바로주유 이용 금액 10만원 이상 포함 필수 이용 기간 : 2026.8.1 ~ 2026.9.30 해외 가맹점 이용 시 최대 50만원 캐시백 이용 기간 : 2026. 8. 1 ~ 2026. 9. 30 이벤트 카드 GS칼텍스 이용 시 반경 5km 내 최저가 적용 에너지플러스 현대카드 보기 전월 이용금액 40만원 이상 시 제공 * GS칼텍스 '에너지플러스 앱' 바로주유 이용 금액 10만원 이상 포함 필수 이벤트 기간: 2026. 8. 1 ~ 2026. 8. 31 이용 기간: 2026. 8. 1 ~ 2026. 9. 30 이벤트 대상: 이벤트 시작일 직전 6개월간(2026. 2. 1 ~ 2026. 7. 31) 모든 현대카드 결제 이력 없는 회원 혜택 제공일: 2026년 10월 말경 본인 명의 결제 계좌로 입금 혜택2 해외 가맹점 50만/300만/500만원 이용 시 3만/30만/50만원 캐시백 Visa 브랜드 대상 카드로 이용 기간 내 해외 온·오프라인 가맹점*에서 50만/300만/500만원 이상 결제 시 3만/30만/50만원 캐시백 총 이용 금액 : 현대카드 앱 > 메뉴(좌측 상단) > 카드 이용 내역 > 최근 이용 내역 바로주유 이용 금액 : 에너지플러스 앱 > 결제 내역",
+        "description": "GS칼텍스 반경 5km 최저가 주유 보장",
         "discount_type": null,
         "discount_value": null
       }
@@ -1463,6 +1463,21 @@
       }
     },
     {
+      "card_id": 2722,
+      "card_name": "신한카드 SOL트래블",
+      "card_company": "신한카드",
+      "brand": "Mastercard",
+      "category": "신용",
+      "card_type": "할인형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2722/card_img/35971/2722card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 2993,
       "card_name": "카드의정석2 ROUTINE",
       "card_company": "우리카드",
@@ -1470,6 +1485,21 @@
       "category": "신용",
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2993/card_img/49028/2993card_1.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 2703,
+      "card_name": "JADE Prime",
+      "card_company": "하나카드",
+      "brand": "VISA",
+      "category": "신용",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2703/card_img/34566/2703_1card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -1531,38 +1561,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/54/card_img/20135/54card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2722,
-      "card_name": "신한카드 SOL트래블",
-      "card_company": "신한카드",
-      "brand": "Mastercard",
-      "category": "신용",
-      "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2722/card_img/35971/2722card.png",
-      "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2703,
-      "card_name": "JADE Prime",
-      "card_company": "하나카드",
-      "brand": "VISA",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2703/card_img/34566/2703_1card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
         "discount_type": null,
         "discount_value": null
       }
@@ -1576,8 +1576,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2234/card_img/27720/2234card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1591,10 +1591,10 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2939/card_img/46989/2939card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차 국내외 가맹점 1.5% 적립 현대카드MY BUSINESS M F&B 보기 주유/LPG/전기차 충전,이동통신 요금 5% 적립 - 전월 이용 금액 100만원 이상 시 주유/LPG/전기차 충전, 이동통신 요금, 전기요금, 도시가스 요금, 4대 보험 5% M포인트 적립(대상점 통합해 월 2만 M포인트 적립 한도) 현대카드MY BUSINESS M E-seller : 국내전용/국내외겸용(Visa Platinum/Amex Platinum 50,000원",
-        "discount_type": "percent",
-        "discount_value": 1.5
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -1621,8 +1621,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/655/card_img/21418/655card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1636,8 +1636,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/3027/card_img/50156/3027card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1666,10 +1666,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2844/card_img/49133/2844card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 신규회원 연회비 캐시백 이벤트 혜택 기간 내 현대카드 홈페이지 및 앱에서 대상 카드 신규 발급 후 조건 충족 시 발급 첫해 연회비 캐시백 대상 · 현대카드 최초 발급 및 재가입(탈회 후 1년 초과하여 발급)회원 · 마케팅 수신 동의 STEP 1 현대카드 홈페이지 및 앱에서 카드 신청 STEP 2 마케팅 수신 동의 STEP 3 발급 다음 달부터 3개월 이내 캐시백 제공(결제 계좌 입금) 기간 2026. 8. 1 ~ 2026. 8. 31(카드 신청일 기준) 대상 카드 현대카드 ZERO Up(할인형), 현대카드 ZERO Up(포인트형) 혜택 제공일 발급 다음 달 30일까지 조건 충족 후 유지 시 발급 다음 달 부터 3개월 이내 본인 명의 결제 계좌로 입금 예시) 2026년 8월 발급 후 2026년 9월 30일까지 조건 충족 시 2026년 11월 30일경 입금 신청 방법 · 홈페이지 > 카드 > 카드신청 · 앱 > 메뉴(좌측 상단) > 카드 신청 확인해 주세요 대상카드 연회비 현대카드 ZERO UP(할인형): 국내전용/국내외겸용(Visa Platinum/Amex Platinum) 30,000원 현대카드 ZERO UP(포인트형): 국내전용/국내외겸용(Visa Platinum/Amex Platinum) 30,000원 현대카드 ZERO UP(할인형) 실적 한도 제한 없이 국내외 가맹점 0.8% 청구 할인 온라인몰, 대형마트, 교육, 주유, 이동통신 요금 10만원 이상 결제 시 1.6% 청구 할인 현대카드 ZERO UP(포인트형) 실적 한도 제한 없이 국내외 가맹점 1.2% 적립 온라인몰, 대형마트, 교육, 주유, 이동통신 요금 10만원 이상 결제 시 2.4% 적립 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 상품설명서를 통해 확인 가능",
-        "discount_type": "percent",
-        "discount_value": 0.8
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -1696,23 +1696,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2610/card_img/31261/2610card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2916,
-      "card_name": "The CLASSIC NEO",
-      "card_company": "신한카드",
-      "brand": "Mastercard",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2916/card_img/45177/2916card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1733,6 +1718,21 @@
       }
     },
     {
+      "card_id": 2916,
+      "card_name": "The CLASSIC NEO",
+      "card_company": "신한카드",
+      "brand": "Mastercard",
+      "category": "신용",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2916/card_img/45177/2916card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 718,
       "card_name": "국민행복 삼성카드 V2",
       "card_company": "삼성카드",
@@ -1741,8 +1741,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/718/card_img/28063/718card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1756,10 +1756,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2883/card_img/44419/2883card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 (9개 영역 5% 청구 할인 / 일반음식점, 주유, 대형마트 주말(토·일요일) 10% 청구할인 현대카드Z play (온라인몰, 병원・약국, 학원, 주유, 생활요금 정기결제 10% 청구 할인) 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 카드 상품별 상품설명서를 통해 확인 가능 위 혜택은 현대카드 홈페이지 및 앱에서 발급한 회원에 한해 1회 제공됩니다.(오프라인 발급 시 혜택 제외) 다음의 경우 혜택을 받을 수 없습니다. 본인 명의 카드 신규 발급 외 본인 카드 추가·교체 발급, 가족 카드 발급 회원 대상 카드 발급월부터 1년(2025년 9월 ~ 2026년 8월) 내 탈회 또는 본인·가족 카드 해지 이력이 있는 회원 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 카드 이용 대금 결제일과 캐시백 제공일이 동일한 경우 캐시백 금액이 이용 대금으로 납부될 수 있습니다 혜택 제공 시점에 대상 카드 해지, 교체(재발급 등), 정지(연체 등), 탈회 등의 경우 혜택이 제공되지 않습니다.(카드 상태가 정상인 경우에 한해 제공) 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 현대카드에서 진행하는 다른 이벤트(연회비 캐시백, 발급·이용 유도 등) 혜택과 중복 적용 불가합니다. 카드 발급 여부는 현대카드의 발급 및 심사 기준에 따릅니다. 자세한 내용은 현대카드 고객센터(1577-6000)로 문의해 주세요. 위 혜택은 현대카드 사정에 따라 변경 또는 중단될 수 있습니다. 카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체금리가 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)",
-        "discount_type": "percent",
-        "discount_value": 5
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -1801,8 +1801,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2344/card_img/39670/2344card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1831,8 +1831,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/92/card_img/20246/92card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1846,8 +1846,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2705/card_img/34596/2705card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -1861,8 +1861,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/12/card_img/20094/12card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2056,23 +2056,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2683/card_img/39649/2680card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차 (9개 영역 5% 청구 할인 / 일반음식점, 주유, 대형마트 주말(토·일요일) 10% 청구할인 현대카드Z play (온라인몰, 병원・약국, 학원, 주유, 생활요금 정기결제 10% 청구 할인) 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 카드 상품별 상품설명서를 통해 확인 가능 위 혜택은 현대카드 홈페이지 및 앱에서 발급한 회원에 한해 1회 제공됩니다.(오프라인 발급 시 혜택 제외) 다음의 경우 혜택을 받을 수 없습니다. 본인 명의 카드 신규 발급 외 본인 카드 추가·교체 발급, 가족 카드 발급 회원 대상 카드 발급월부터 1년(2025년 9월 ~ 2026년 8월) 내 탈회 또는 본인·가족 카드 해지 이력이 있는 회원 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 카드 이용 대금 결제일과 캐시백 제공일이 동일한 경우 캐시백 금액이 이용 대금으로 납부될 수 있습니다 혜택 제공 시점에 대상 카드 해지, 교체(재발급 등), 정지(연체 등), 탈회 등의 경우 혜택이 제공되지 않습니다.(카드 상태가 정상인 경우에 한해 제공) 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 현대카드에서 진행하는 다른 이벤트(연회비 캐시백, 발급·이용 유도 등) 혜택과 중복 적용 불가합니다. 카드 발급 여부는 현대카드의 발급 및 심사 기준에 따릅니다. 자세한 내용은 현대카드 고객센터(1577-6000)로 문의해 주세요. 위 혜택은 현대카드 사정에 따라 변경 또는 중단될 수 있습니다. 카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체금리가 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)",
-        "discount_type": "percent",
-        "discount_value": 5
-      }
-    },
-    {
-      "card_id": 2836,
-      "card_name": "신한카드 Discount Plan",
-      "card_company": "신한카드",
-      "brand": "Mastercard",
-      "category": "신용",
-      "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2836/card_img/41608/2836card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2093,6 +2078,21 @@
       }
     },
     {
+      "card_id": 2836,
+      "card_name": "신한카드 Discount Plan",
+      "card_company": "신한카드",
+      "brand": "Mastercard",
+      "category": "신용",
+      "card_type": "할인형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2836/card_img/41608/2836card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 266,
       "card_name": "일상의 기쁨카드(신용)",
       "card_company": "IBK기업은행",
@@ -2101,8 +2101,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/266/card_img/23586/266card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2116,10 +2116,10 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2940/card_img/46990/2940card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "국내외 가맹점 1.5% 적립 현대카드MY BUSINESS M F&B 보기 주유/LPG/전기차 충전,이동통신 요금 5% 적립 - 전월 이용 금액 100만원 이상 시 주유/LPG/전기차 충전, 이동통신 요금, 전기요금, 도시가스 요금, 4대 보험 5% M포인트 적립(대상점 통합해 월 2만 M포인트 적립 한도) 현대카드MY BUSINESS M E-seller : 국내전용/국내외겸용(Visa Platinum/Amex Platinum 50,000원",
-        "discount_type": "percent",
-        "discount_value": 1.5
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -2161,8 +2161,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/64/card_img/27713/64card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2192,7 +2192,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2290/card_img/27723/2290card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유 1만원 할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -2251,8 +2251,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/227/card_img/37251/227card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2281,8 +2281,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/658/card_img/48139/658card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2311,8 +2311,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2661/card_img/32404/2661card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2386,8 +2386,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2461/card_img/28297/2461card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2402,9 +2402,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2649/card_img/32141/2649card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 최대 15,000P 적립",
+        "discount_type": "point",
+        "discount_value": 0
       }
     },
     {
@@ -2415,21 +2415,6 @@
       "category": "신용",
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2447/card_img/44246/2447card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 548,
-      "card_name": "카드의정석 MILEAGE SKYPASS",
-      "card_company": "우리카드",
-      "brand": "VISA",
-      "category": "신용",
-      "card_type": "마일리지형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/548/card_img/23980/0548card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -2445,6 +2430,21 @@
       "category": "신용",
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2694/card_img/33709/2694card_1.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 548,
+      "card_name": "카드의정석 MILEAGE SKYPASS",
+      "card_company": "우리카드",
+      "brand": "VISA",
+      "category": "신용",
+      "card_type": "마일리지형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/548/card_img/23980/0548card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -2506,8 +2506,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2959/card_img/47714/2959card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2551,8 +2551,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/884/card_img/21657/884card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2596,8 +2596,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2780/card_img/38286/2780card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2642,9 +2642,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/654/card_img/21417/654card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소/충전소(트레블팩) 5% 할인",
+        "discount_type": "percent",
+        "discount_value": 5
       }
     },
     {
@@ -2656,10 +2656,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2684/card_img/39652/2680card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "(9개 영역 5% 청구 할인 / 일반음식점, 주유, 대형마트 주말(토·일요일) 10% 청구할인 현대카드Z play (온라인몰, 병원・약국, 학원, 주유, 생활요금 정기결제 10% 청구 할인) 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 카드 상품별 상품설명서를 통해 확인 가능 위 혜택은 현대카드 홈페이지 및 앱에서 발급한 회원에 한해 1회 제공됩니다.(오프라인 발급 시 혜택 제외) 다음의 경우 혜택을 받을 수 없습니다. 본인 명의 카드 신규 발급 외 본인 카드 추가·교체 발급, 가족 카드 발급 회원 대상 카드 발급월부터 1년(2025년 9월 ~ 2026년 8월) 내 탈회 또는 본인·가족 카드 해지 이력이 있는 회원 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 카드 이용 대금 결제일과 캐시백 제공일이 동일한 경우 캐시백 금액이 이용 대금으로 납부될 수 있습니다 혜택 제공 시점에 대상 카드 해지, 교체(재발급 등), 정지(연체 등), 탈회 등의 경우 혜택이 제공되지 않습니다.(카드 상태가 정상인 경우에 한해 제공) 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 현대카드에서 진행하는 다른 이벤트(연회비 캐시백, 발급·이용 유도 등) 혜택과 중복 적용 불가합니다. 카드 발급 여부는 현대카드의 발급 및 심사 기준에 따릅니다. 자세한 내용은 현대카드 고객센터(1577-6000)로 문의해 주세요. 위 혜택은 현대카드 사정에 따라 변경 또는 중단될 수 있습니다. 카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체금리가 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)",
-        "discount_type": "percent",
-        "discount_value": 5
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -2717,9 +2717,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2324/card_img/28095/2324card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "사업 운영 지원 3% 할인",
+        "discount_type": "percent",
+        "discount_value": 3
       }
     },
     {
@@ -2851,8 +2851,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/138/card_img/20366/138card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2881,8 +2881,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/181/card_img/20398/181card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2941,10 +2941,10 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2680/card_img/39646/2680card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "(9개 영역 5% 청구 할인 / 일반음식점, 주유, 대형마트 주말(토·일요일) 10% 청구할인 현대카드Z play (온라인몰, 병원・약국, 학원, 주유, 생활요금 정기결제 10% 청구 할인) 실적 조건 및 할인 한도, 혜택 제외 가맹점 기준 등 자세한 내용은 카드 상품별 상품설명서를 통해 확인 가능 위 혜택은 현대카드 홈페이지 및 앱에서 발급한 회원에 한해 1회 제공됩니다.(오프라인 발급 시 혜택 제외) 다음의 경우 혜택을 받을 수 없습니다. 본인 명의 카드 신규 발급 외 본인 카드 추가·교체 발급, 가족 카드 발급 회원 대상 카드 발급월부터 1년(2025년 9월 ~ 2026년 8월) 내 탈회 또는 본인·가족 카드 해지 이력이 있는 회원 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 카드 이용 대금 결제일과 캐시백 제공일이 동일한 경우 캐시백 금액이 이용 대금으로 납부될 수 있습니다 혜택 제공 시점에 대상 카드 해지, 교체(재발급 등), 정지(연체 등), 탈회 등의 경우 혜택이 제공되지 않습니다.(카드 상태가 정상인 경우에 한해 제공) 혜택 제공 일정은 현대카드 또는 회원 사정에 따라 변경될 수 있습니다. 현대카드에서 진행하는 다른 이벤트(연회비 캐시백, 발급·이용 유도 등) 혜택과 중복 적용 불가합니다. 카드 발급 여부는 현대카드의 발급 및 심사 기준에 따릅니다. 자세한 내용은 현대카드 고객센터(1577-6000)로 문의해 주세요. 위 혜택은 현대카드 사정에 따라 변경 또는 중단될 수 있습니다. 카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체금리가 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)",
-        "discount_type": "percent",
-        "discount_value": 5
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
       }
     },
     {
@@ -2956,8 +2956,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2435/card_img/48033/2435card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -2986,8 +2986,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/615/card_img/21382/615card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3031,8 +3031,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2781/card_img/38287/2781card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3061,8 +3061,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2252/card_img/21002/2252card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3143,6 +3143,21 @@
       }
     },
     {
+      "card_id": 3022,
+      "card_name": "the OPUS blue",
+      "card_company": "우리카드",
+      "brand": "Mastercard",
+      "category": "신용",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/3022/card_img/50017/3022card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 2349,
       "card_name": "모니모카드",
       "card_company": "삼성카드",
@@ -3166,8 +3181,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2746/card_img/36818/2746card_2.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3203,21 +3218,6 @@
       }
     },
     {
-      "card_id": 3022,
-      "card_name": "the OPUS blue",
-      "card_company": "우리카드",
-      "brand": "Mastercard",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/3022/card_img/50017/3022card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
       "card_id": 2380,
       "card_name": "신세계 BC 바로 콰트로 플러스",
       "card_company": "BC 바로카드",
@@ -3226,8 +3226,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2380/card_img/25482/2380card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3241,8 +3241,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2539/card_img/29505/2539card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3272,9 +3272,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/115/card_img/20273/115card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -3317,9 +3317,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/121/card_img/20353/121card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소/충전소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -3376,8 +3376,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2992/card_img/49026/2992card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3421,8 +3421,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/108/card_img/20266/108card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3466,8 +3466,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2420/card_img/28101/2420card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3481,8 +3481,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2943/card_img/47123/2943card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3512,9 +3512,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/61/card_img/28053/61card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL 40포인트/L 적립",
+        "discount_type": "point",
+        "discount_value": 40
       }
     },
     {
@@ -3586,8 +3586,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2876/card_img/43986/2876card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3646,8 +3646,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2697/card_img/33888/2697card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3676,8 +3676,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2624/card_img/31557/2624card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3721,8 +3721,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/720/card_img/22194/720card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3751,8 +3751,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2548/card_img/29544/2548card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3766,8 +3766,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/741/card_img/22215/741card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3811,8 +3811,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2925/card_img/45767/2925card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3827,9 +3827,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2616/card_img/31388/2616card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전기차/수소차 충전금액 최대 40% 적립",
+        "discount_type": "percent",
+        "discount_value": 40
       }
     },
     {
@@ -3886,8 +3886,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2429/card_img/27228/2429card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3901,8 +3901,23 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2382/card_img/25484/2382card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 2979,
+      "card_name": "신한카드 ECO Plan",
+      "card_company": "신한카드",
+      "brand": "VISA",
+      "category": "신용",
+      "card_type": "할인형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2979/card_img/48655/2979card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3916,8 +3931,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2851/card_img/43400/2851.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3961,8 +3976,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1787/card_img/28782/1787card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -3977,9 +3992,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2828/card_img/40177/2828card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK에너지 10% 할인",
+        "discount_type": "percent",
+        "discount_value": 10
       }
     },
     {
@@ -4013,16 +4028,16 @@
       }
     },
     {
-      "card_id": 2979,
-      "card_name": "신한카드 ECO Plan",
+      "card_id": 476,
+      "card_name": "신한카드 Deep Making",
       "card_company": "신한카드",
       "brand": "VISA",
       "category": "신용",
-      "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2979/card_img/48655/2979card.png",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/476/card_img/21166/476card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4082,9 +4097,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1390/card_img/20752/1390card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "현대오일뱅크 40P/L 적립",
+        "discount_type": "point",
+        "discount_value": 40
       }
     },
     {
@@ -4096,8 +4111,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1577/card_img/28754/1577card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4141,23 +4156,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2631/card_img/31783/2631card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 476,
-      "card_name": "신한카드 Deep Making",
-      "card_company": "신한카드",
-      "brand": "VISA",
-      "category": "신용",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/476/card_img/21166/476card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4187,9 +4187,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1768/card_img/22345/1768card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "현대오일뱅크/S-OIL 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -4202,9 +4202,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2952/card_img/47716/2952card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "HD현대오일뱅크 10% 할인",
+        "discount_type": "percent",
+        "discount_value": 10
       }
     },
     {
@@ -4231,8 +4231,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/28/card_img/20110/28card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4262,7 +4262,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/241/card_img/20468/241card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "지역쇼핑/주유 5,000 하나머니 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -4291,8 +4291,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2450/card_img/27739/2450card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4336,8 +4336,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/527/card_img/21214/527card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4351,8 +4351,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/3018/card_img/49799/3018card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4411,8 +4411,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2932/card_img/48313/2932card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4471,8 +4471,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2704/card_img/34571/2704card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4516,8 +4516,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/780/card_img/28070/780card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4577,9 +4577,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2617/card_img/31389/2617card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전기・수소차 충전 20~40% 에코머니 적립",
+        "discount_type": "percent",
+        "discount_value": 40
       }
     },
     {
@@ -4591,8 +4591,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2448/card_img/27743/2448card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4651,8 +4651,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/634/card_img/21400/634card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4696,8 +4696,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2472/card_img/28299/2472card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4711,8 +4711,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/681/card_img/28062/681card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4772,9 +4772,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1379/card_img/20764/1379card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유/충전소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -4786,8 +4786,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1599/card_img/22605/1599card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4817,9 +4817,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/248/card_img/20475/248card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 최대 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -4846,8 +4846,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2926/card_img/45800/2926card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4891,8 +4891,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1859/card_img/22152/1859card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4906,8 +4906,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/146/card_img/20372/146card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -4967,9 +4967,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/506/card_img/21195/506card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -4982,7 +4982,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2368/card_img/39672/2368card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "현대오일뱅크 주유시 X2배 포인트 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -4997,9 +4997,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2903/card_img/44398/2903card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK에너지·HD현대오일뱅크 리터당 150원 할인",
+        "discount_type": "amount",
+        "discount_value": 150
       }
     },
     {
@@ -5026,8 +5026,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2195/card_img/21809/2195card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5057,9 +5057,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/264/card_img/20488/264card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "모든 주유소/충전소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -5087,7 +5087,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1889/card_img/28084/1889card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "모든주유소 2천원 할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -5102,9 +5102,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2827/card_img/40176/2827card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 10% 할인",
+        "discount_type": "percent",
+        "discount_value": 10
       }
     },
     {
@@ -5132,9 +5132,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/188/card_img/20406/188card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소/충전소 100~150원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 150
       }
     },
     {
@@ -5176,8 +5176,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2994/card_img/49069/2994card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5236,8 +5236,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2487/card_img/28399/2487card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5251,8 +5251,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/452/card_img/20966/452card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5281,8 +5281,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/107/card_img/20265/107card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5326,8 +5326,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1731/card_img/22383/1731card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5341,8 +5341,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2238/card_img/28091/2238card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5356,8 +5356,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/18/card_img/20100/18card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5401,8 +5401,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1584/card_img/22633/1584card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5521,8 +5521,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/630/card_img/21396/630card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5537,7 +5537,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/488/card_img/21178/488card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "SK, GS칼텍스 150점/L 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -5611,8 +5611,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/740/card_img/22214/740card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5626,8 +5626,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/881/card_img/33921/881card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5671,8 +5671,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2254/card_img/21004/2254card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5687,9 +5687,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2366/card_img/25047/2366card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 5% 할인",
+        "discount_type": "percent",
+        "discount_value": 5
       }
     },
     {
@@ -5761,8 +5761,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2257/card_img/28092/2257card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5821,8 +5821,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/477/card_img/21167/477card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5836,8 +5836,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2899/card_img/44318/2899card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5851,8 +5851,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2789/card_img/39279/2789card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5897,9 +5897,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/879/card_img/21663/879card.gif",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소(LPG포함) 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -5926,8 +5926,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1032/card_img/21503/1032card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5941,8 +5941,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2339/card_img/24303/2339card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -5986,8 +5986,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2615/card_img/31432/2615card-%281%29.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6002,9 +6002,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/859/card_img/21683/859card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "경차 유류세 환급 / 주유소, 충전소 100~400원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 400
       }
     },
     {
@@ -6046,8 +6046,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/182/card_img/20399/182card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6106,8 +6106,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/729/card_img/28578/729card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6151,8 +6151,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2543/card_img/29519/2543card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6166,8 +6166,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2795/card_img/39322/2795card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6227,7 +6227,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/697/card_img/22171/697card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유소/충전소 최대 130점/L 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -6256,8 +6256,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/551/card_img/21256/551card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6271,8 +6271,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/469/card_img/21159/469card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6302,9 +6302,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2284/card_img/20682/2284card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소/전기차충전 0.5% 할인",
+        "discount_type": "percent",
+        "discount_value": 0.5
       }
     },
     {
@@ -6316,8 +6316,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/781/card_img/21761/781card.jpg",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6361,8 +6361,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2845/card_img/48571/2845card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6377,9 +6377,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2603/card_img/31201/2603card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 최대 300원/L 청구할인",
+        "discount_type": "per_liter",
+        "discount_value": 300
       }
     },
     {
@@ -6392,7 +6392,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/854/card_img/21688/854card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유 및 충전 시, 리터당 100~400원 청구할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -6466,8 +6466,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2175/card_img/21789/2175card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6496,8 +6496,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/183/card_img/20400/183card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6511,8 +6511,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/783/card_img/21759/783card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6556,8 +6556,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2513/card_img/28755/2513card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6601,8 +6601,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2963/card_img/48104/2963card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6617,9 +6617,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2283/card_img/20683/2283card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 최대 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -6646,8 +6646,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/568/card_img/28059/568card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6661,8 +6661,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2618/card_img/31391/2618card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6676,8 +6676,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2875/card_img/43985/2875card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6766,8 +6766,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2449/card_img/44283/2449card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6796,8 +6796,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/263/card_img/47620/263card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6811,8 +6811,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/480/card_img/21170/480card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6841,8 +6841,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2701/card_img/34110/2701card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6856,8 +6856,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2180/card_img/21794/2180card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6872,9 +6872,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/125/card_img/20355/125card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "E1 LPG충전소 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -6916,8 +6916,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2442/card_img/48816/2442card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6961,8 +6961,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/186/card_img/20403/186card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -6991,8 +6991,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2019/card_img/21979/2019card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7036,8 +7036,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/109/card_img/20267/109card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7051,8 +7051,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2253/card_img/21003/2253card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7307,9 +7307,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2688/card_img/33240/2688card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 60~100원/L 청구할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -7381,8 +7381,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2409/card_img/26572/2409card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7411,8 +7411,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2183/card_img/21797/2183card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7441,8 +7441,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/451/card_img/20965/451card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7472,9 +7472,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2359/card_img/24780/2359card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "우대 주유소 25~85 포인트 적립",
+        "discount_type": "point",
+        "discount_value": 85
       }
     },
     {
@@ -7486,8 +7486,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2850/card_img/42532/cid2850.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7501,8 +7501,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2658/card_img/32301/2658card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7531,8 +7531,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2196/card_img/21810/2196card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7547,9 +7547,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2607/card_img/31232/2607card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 1% 할인",
+        "discount_type": "percent",
+        "discount_value": 1
       }
     },
     {
@@ -7592,9 +7592,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2476/card_img/28410/2476card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유(LPG) / 전기차 충전 최대 8,000원 할인",
+        "discount_type": "amount",
+        "discount_value": 8000
       }
     },
     {
@@ -7606,8 +7606,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/140/card_img/20368/140card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7622,9 +7622,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1673/card_img/28076/1673card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL 80P/L 적립",
+        "discount_type": "point",
+        "discount_value": 80
       }
     },
     {
@@ -7636,8 +7636,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1961/card_img/22037/1961card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7681,8 +7681,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1294/card_img/21012/1294card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7741,8 +7741,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/546/card_img/21252/546card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7757,7 +7757,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1884/card_img/28083/1884card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유소/충전소 3천원 할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -7772,9 +7772,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/46/card_img/27704/46card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "국내외 가맹점 최대 0.4% 포인트 적립 / 모든 주유소 30원·60원 리터당 할인",
+        "discount_type": "percent",
+        "discount_value": 0.4
       }
     },
     {
@@ -7801,8 +7801,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2914/card_img/44990/2914card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7832,9 +7832,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/693/card_img/22167/693card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 80원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 80
       }
     },
     {
@@ -7846,8 +7846,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1593/card_img/22624/1593card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7861,8 +7861,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1586/card_img/22631/1586card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7921,8 +7921,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/931/card_img/33922/931card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -7966,8 +7966,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2198/card_img/21812/2198card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8056,8 +8056,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1433/card_img/20641/1433card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8071,8 +8071,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2179/card_img/21793/2179card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8131,8 +8131,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/580/card_img/21321/580card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8416,8 +8416,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2962/card_img/48069/2962card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8476,8 +8476,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2199/card_img/21813/2199card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8506,8 +8506,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2480/card_img/28407/2480card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8536,8 +8536,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2496/card_img/28549/2496card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8581,8 +8581,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/270/card_img/20493/270card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8612,9 +8612,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2630/card_img/31750/2630card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 60원/L 청구할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -8626,8 +8626,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1944/card_img/22054/1944card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8641,8 +8641,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2840/card_img/41667/2840card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8687,9 +8687,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/916/card_img/21628/916card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "알뜰 주유소 80~100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -8716,8 +8716,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2416/card_img/26998/2416card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8746,8 +8746,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/273/card_img/20495/273card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8776,8 +8776,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/247/card_img/20474/247card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8806,8 +8806,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2743/card_img/36737/2743card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8821,8 +8821,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2856/card_img/43314/2856card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -8867,9 +8867,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2619/card_img/31467/2619card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전기차/수소차 충전소 최대 40% 적립",
+        "discount_type": "percent",
+        "discount_value": 40
       }
     },
     {
@@ -8897,9 +8897,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/35/card_img/20117/35card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 60~100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -8911,8 +8911,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1198/card_img/21110/1198card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9047,7 +9047,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2185/card_img/21799/2185card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유소,충전소 리터당 80~100원 청구할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -9077,9 +9077,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1648/card_img/22517/1648card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 5% 할인",
+        "discount_type": "percent",
+        "discount_value": 5
       }
     },
     {
@@ -9121,8 +9121,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2278/card_img/28093/2278card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9151,8 +9151,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1611/card_img/22591/1611card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9227,9 +9227,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2672/card_img/32637/2672card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전 주유소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -9256,8 +9256,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2838/card_img/41672/2838card_2.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9271,8 +9271,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1380/card_img/20763/1380card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9361,8 +9361,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/650/card_img/21413/650card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9376,8 +9376,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/905/card_img/21639/905card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9511,8 +9511,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/738/card_img/22212/738card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9556,8 +9556,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/753/card_img/22227/753card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9572,9 +9572,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/595/card_img/21362/595card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유/충전소 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -9587,9 +9587,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2622/card_img/31492/2622card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "전기차・수소차 충전 최대 40% 적립",
+        "discount_type": "percent",
+        "discount_value": 40
       }
     },
     {
@@ -9617,9 +9617,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/652/card_img/21415/652card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 5% 할인",
+        "discount_type": "percent",
+        "discount_value": 5
       }
     },
     {
@@ -9646,8 +9646,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/3017/card_img/49798/3017card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9661,8 +9661,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2336/card_img/24298/2336card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9751,8 +9751,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2132/card_img/21867/2132card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9781,8 +9781,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/696/card_img/22170/696card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9811,8 +9811,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/735/card_img/22209/735card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9841,8 +9841,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1213/card_img/21095/1213card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -9872,9 +9872,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1695/card_img/22429/1695card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 60원/L 청구할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -9902,9 +9902,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/776/card_img/28069/776card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 80원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 80
       }
     },
     {
@@ -10037,9 +10037,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/238/card_img/20465/238card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 3,000원 할인",
+        "discount_type": "amount",
+        "discount_value": 3000
       }
     },
     {
@@ -10052,7 +10052,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2232/card_img/20931/2232card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "SK주유소 3천원 할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -10081,8 +10081,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/240/card_img/20467/240card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10097,7 +10097,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/254/card_img/20482/254card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "SK에너지 70머니/L 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -10111,8 +10111,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/239/card_img/20466/239card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10126,8 +10126,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2178/card_img/21792/2178card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10156,8 +10156,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/949/card_img/21594/949card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10171,8 +10171,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/950/card_img/21593/950card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10232,7 +10232,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1854/card_img/22147/1854card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "SK주유소 머핀포인트 80점/L 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -10321,8 +10321,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2347/card_img/32524/2347card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10366,8 +10366,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2348/card_img/25292/2348card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10456,8 +10456,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/940/card_img/29510/940card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10501,8 +10501,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/448/card_img/20956/448card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10531,8 +10531,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/453/card_img/20968/453card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10591,8 +10591,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/87/card_img/20239/87card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10636,8 +10636,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2869/card_img/43912/2869card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10681,8 +10681,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2744/card_img/36738/2744card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10696,8 +10696,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1010/card_img/21525/1010card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10726,8 +10726,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/768/card_img/22242/768card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10757,9 +10757,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/112/card_img/20270/112card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -10771,8 +10771,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1171/card_img/21137/1171card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10786,8 +10786,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/761/card_img/22235/761card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10816,8 +10816,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2483/card_img/28404/2483card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10832,9 +10832,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1487/card_img/20427/1487card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소/충전소 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -10846,8 +10846,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/723/card_img/22197/723card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10981,8 +10981,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2485/card_img/28402/2485card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -10996,8 +10996,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2484/card_img/28403/2484card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11102,9 +11102,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/94/card_img/20248/94card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL/현대오일뱅크 60~100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -11266,8 +11266,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/179/card_img/37250/179card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11342,7 +11342,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2403/card_img/26478/2403card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유 리터당 60~100원 청구할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -11356,8 +11356,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2401/card_img/26210/2401card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11371,8 +11371,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2354/card_img/24965/2354card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11387,9 +11387,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2286/card_img/25532/2286card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유/충전 60원/L 적립",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -11402,9 +11402,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/259/card_img/38516/259card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스(LPG포함) 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -11417,9 +11417,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/258/card_img/33952/258card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스(LPG포함) 120원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 120
       }
     },
     {
@@ -11461,8 +11461,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/120/card_img/20352/120card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11521,8 +11521,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1741/card_img/22373/1741card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11536,8 +11536,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1759/card_img/28077/1759card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11567,9 +11567,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/952/card_img/21591/952card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 월 최대 5만원 할인",
+        "discount_type": "monthly_amount",
+        "discount_value": 50000
       }
     },
     {
@@ -11656,8 +11656,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/422/card_img/20920/422card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11671,8 +11671,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2260/card_img/27660/2260card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11701,8 +11701,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/763/card_img/27661/763card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11716,8 +11716,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/424/card_img/20922/424card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11731,8 +11731,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/724/card_img/22198/724card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11761,8 +11761,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/529/card_img/21218/529card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11776,8 +11776,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2259/card_img/27662/2259card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11791,8 +11791,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2436/card_img/27667/2436card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11807,9 +11807,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2605/card_img/31230/2605card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유·식음료 5% 청구할인",
+        "discount_type": "percent",
+        "discount_value": 5
       }
     },
     {
@@ -11821,8 +11821,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2502/card_img/28620/2502card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11836,8 +11836,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/719/card_img/22193/719card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11881,8 +11881,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/542/card_img/21246/542card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11896,8 +11896,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1315/card_img/20866/1315card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11911,8 +11911,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1339/card_img/20836/1339card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11926,8 +11926,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/717/card_img/22191/717card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -11957,9 +11957,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2300/card_img/28825/2300card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "EV충전 20% 하나머니 적립",
+        "discount_type": "percent",
+        "discount_value": 20
       }
     },
     {
@@ -12001,8 +12001,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/483/card_img/21173/483card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12016,8 +12016,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/516/card_img/21201/516card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12107,9 +12107,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/89/card_img/20242/89card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "Most주유소 최대 200원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 200
       }
     },
     {
@@ -12331,8 +12331,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2479/card_img/28408/2479card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12421,8 +12421,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/127/card_img/20357/127card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12482,9 +12482,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/86/card_img/20168/86card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL,현대오일뱅크 60~100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -12526,8 +12526,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1710/card_img/22414/1710card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12541,8 +12541,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/777/card_img/22251/777card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12571,8 +12571,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/73/card_img/20155/73card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12586,8 +12586,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/84/card_img/20166/84card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12601,8 +12601,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/93/card_img/20247/93card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12616,8 +12616,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/91/card_img/20245/91card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12632,9 +12632,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/85/card_img/20167/85card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주말주유 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -12646,8 +12646,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/473/card_img/21163/473card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12661,8 +12661,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/617/card_img/21384/617card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12706,8 +12706,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/459/card_img/20980/459card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12721,8 +12721,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/481/card_img/21171/481card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12736,8 +12736,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/482/card_img/30435/482card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12751,8 +12751,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/521/card_img/21206/521card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12781,8 +12781,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1816/card_img/22290/1816card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -12842,9 +12842,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/58/card_img/28052/58card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "모든주유소 90원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 90
       }
     },
     {
@@ -12962,9 +12962,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2503/card_img/28621/2503card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -12977,7 +12977,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/134/card_img/20363/134card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "모든주유소 110~150점/L 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -13187,7 +13187,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/231/card_img/20458/231card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유소/충전소 10만원당 5,000머니 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -13216,8 +13216,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/237/card_img/20464/237card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13247,9 +13247,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1630/card_img/22552/1630card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 60원/L 청구할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -13261,8 +13261,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1035/card_img/21500/1035card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13306,8 +13306,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2345/card_img/24462/2345card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13336,8 +13336,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/700/card_img/22174/700card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13351,8 +13351,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/702/card_img/22176/702card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13366,8 +13366,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/703/card_img/22177/703card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13381,8 +13381,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2287/card_img/20679/2287card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13487,9 +13487,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/421/card_img/20919/421card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "경차 유류세환급 혜택 / 현대오일뱅크/SK에너지 200원·400원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 400
       }
     },
     {
@@ -13502,9 +13502,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/730/card_img/22204/730card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 100원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -13546,8 +13546,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/610/card_img/27232/608card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13576,8 +13576,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/611/card_img/27231/608card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13606,8 +13606,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/418/card_img/20916/418card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13636,8 +13636,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/420/card_img/20918/420card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13696,8 +13696,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1906/card_img/22090/1906card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13741,8 +13741,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2691/card_img/33455/2691card_2.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13891,8 +13891,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2905/card_img/49827/2905card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -13936,8 +13936,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2561/card_img/33460/2561card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14011,8 +14011,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/281/card_img/20503/281card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14056,8 +14056,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/435/card_img/46143/435card_2.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14132,9 +14132,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/350/card_img/20594/350card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 60~50원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 50
       }
     },
     {
@@ -14281,8 +14281,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2750/card_img/36851/2750card_1.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14341,21 +14341,6 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/391/card_img/20890/391card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2758,
-      "card_name": "춘식이달달체크카드",
-      "card_company": "NH농협카드",
-      "brand": "Mastercard",
-      "category": "체크",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2758/card_img/37140/2758card_1.png",
-      "oil_benefit": {
         "has_benefit": false,
         "description": null,
         "discount_type": null,
@@ -14370,6 +14355,21 @@
       "category": "체크",
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/528/card_img/21216/528card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 2758,
+      "card_name": "춘식이달달체크카드",
+      "card_company": "NH농협카드",
+      "brand": "Mastercard",
+      "category": "체크",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2758/card_img/37140/2758card_1.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -14402,9 +14402,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/499/card_img/21188/499card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 40원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -14416,8 +14416,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2742/card_img/36729/2742card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14537,9 +14537,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/351/card_img/20595/351card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 60~50원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 50
       }
     },
     {
@@ -14618,13 +14618,13 @@
       }
     },
     {
-      "card_id": 1765,
-      "card_name": "올바른 NEW HAVE체크카드",
-      "card_company": "NH농협카드",
+      "card_id": 690,
+      "card_name": "모두의 일상 체크카드",
+      "card_company": "하나카드",
       "brand": "Mastercard",
       "category": "체크",
       "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1765/card_img/22348/1765card.png",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/690/card_img/22163/690card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -14633,13 +14633,13 @@
       }
     },
     {
-      "card_id": 690,
-      "card_name": "모두의 일상 체크카드",
-      "card_company": "하나카드",
+      "card_id": 1765,
+      "card_name": "올바른 NEW HAVE체크카드",
+      "card_company": "NH농협카드",
       "brand": "Mastercard",
       "category": "체크",
       "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/690/card_img/22163/690card.png",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1765/card_img/22348/1765card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -14657,9 +14657,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/454/card_img/20970/454card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 0.8% 추가적립",
+        "discount_type": "percent",
+        "discount_value": 0.8
       }
     },
     {
@@ -14671,8 +14671,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2910/card_img/44943/2910card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14701,8 +14701,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/646/card_img/21410/646card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14731,8 +14731,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/325/card_img/20570/325card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -14813,6 +14813,21 @@
       }
     },
     {
+      "card_id": 394,
+      "card_name": "삼성체크카드 & CASHBACK",
+      "card_company": "삼성카드",
+      "brand": null,
+      "category": "체크",
+      "card_type": "할인형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/394/card_img/28057/394card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 370,
       "card_name": "BAZIC(베이직)체크카드",
       "card_company": "NH농협카드",
@@ -14823,21 +14838,6 @@
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 394,
-      "card_name": "삼성체크카드 & CASHBACK",
-      "card_company": "삼성카드",
-      "brand": null,
-      "category": "체크",
-      "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/394/card_img/28057/394card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
         "discount_type": null,
         "discount_value": null
       }
@@ -14882,7 +14882,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2745/card_img/36739/2745card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "주유 1천원 할인",
         "discount_type": null,
         "discount_value": null
       }
@@ -15023,6 +15023,21 @@
       }
     },
     {
+      "card_id": 2431,
+      "card_name": "SC제일은행-현대카드 X CHECK",
+      "card_company": "현대카드",
+      "brand": "VISA",
+      "category": "체크",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2431/card_img/27294/2431card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 680,
       "card_name": "쏘영 체크카드",
       "card_company": "KB국민카드",
@@ -15060,21 +15075,6 @@
       "category": "체크",
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1490/card_img/20409/1490card.png",
-      "oil_benefit": {
-        "has_benefit": false,
-        "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 2431,
-      "card_name": "SC제일은행-현대카드 X CHECK",
-      "card_company": "현대카드",
-      "brand": "VISA",
-      "category": "체크",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2431/card_img/27294/2431card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -15121,8 +15121,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/571/card_img/21304/571card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -15286,8 +15286,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/497/card_img/21186/497card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -15362,9 +15362,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2219/card_img/21765/2219card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유시 리터당 40원 할인",
+        "discount_type": "amount",
+        "discount_value": 40
       }
     },
     {
@@ -15407,9 +15407,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/367/card_img/20608/367card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 40원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -15436,8 +15436,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2421/card_img/27093/2421card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -15452,9 +15452,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/810/card_img/21733/810card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "현대오일뱅크 40원/L 캐시백",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -15466,8 +15466,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2197/card_img/21811/2197card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -15632,9 +15632,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/303/card_img/20526/303card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 15원~30원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 30
       }
     },
     {
@@ -15872,9 +15872,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/346/card_img/20591/346card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK에너지 60원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 60
       }
     },
     {
@@ -15886,8 +15886,23 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/393/card_img/28056/393card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
+      "card_id": 294,
+      "card_name": "신한카드 S-Line 체크",
+      "card_company": "신한카드",
+      "brand": "VISA",
+      "category": "체크",
+      "card_type": "포인트형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/294/card_img/20517/294card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16006,8 +16021,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/388/card_img/36719/388card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16051,8 +16066,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/823/card_img/21719/823card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16126,8 +16141,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/282/card_img/20504/282card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16238,13 +16253,13 @@
       }
     },
     {
-      "card_id": 1039,
+      "card_id": 2026,
       "card_name": "카카오페이 체크카드",
-      "card_company": "광주은행",
-      "brand": "Mastercard",
+      "card_company": "IBK기업은행",
+      "brand": "BC",
       "category": "체크",
       "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1039/card_img/21496/1039card.png",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2026/card_img/21972/2026card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -16253,13 +16268,13 @@
       }
     },
     {
-      "card_id": 2026,
+      "card_id": 1039,
       "card_name": "카카오페이 체크카드",
-      "card_company": "IBK기업은행",
-      "brand": "BC",
+      "card_company": "광주은행",
+      "brand": "Mastercard",
       "category": "체크",
       "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2026/card_img/21972/2026card.png",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1039/card_img/21496/1039card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -16292,7 +16307,7 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/343/card_img/20588/343card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "description": "GS칼텍스 60~50점/L 포인트리 적립",
         "discount_type": null,
         "discount_value": null
       }
@@ -16412,9 +16427,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/816/card_img/21726/816card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "모든주유소 2% 할인",
+        "discount_type": "percent",
+        "discount_value": 2
       }
     },
     {
@@ -16458,21 +16473,6 @@
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 294,
-      "card_name": "신한카드 S-Line 체크",
-      "card_company": "신한카드",
-      "brand": "VISA",
-      "category": "체크",
-      "card_type": "포인트형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/294/card_img/20517/294card.png",
-      "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
         "discount_type": null,
         "discount_value": null
       }
@@ -16577,9 +16577,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2220/card_img/21764/2220card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "GS칼텍스 100원/L 캐쉬백",
+        "discount_type": "per_liter",
+        "discount_value": 100
       }
     },
     {
@@ -16666,8 +16666,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2628/card_img/31739/2628card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16727,9 +16727,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2621/card_img/31491/2621card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "친환경 자동차 충전 최대 20% 적립",
+        "discount_type": "percent",
+        "discount_value": 20
       }
     },
     {
@@ -16786,8 +16786,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/383/card_img/20883/383card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -16906,8 +16906,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/770/card_img/22244/770card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17183,6 +17183,21 @@
       }
     },
     {
+      "card_id": 365,
+      "card_name": "DC줌체크카드(비씨)",
+      "card_company": "NH농협카드",
+      "brand": "UnionPay",
+      "category": "체크",
+      "card_type": "할인형",
+      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/365/card_img/20606/365card.png",
+      "oil_benefit": {
+        "has_benefit": false,
+        "description": null,
+        "discount_type": null,
+        "discount_value": null
+      }
+    },
+    {
       "card_id": 1702,
       "card_name": "FC EXPRESS 체크",
       "card_company": "우리카드",
@@ -17221,8 +17236,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2027/card_img/21971/2027card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17326,8 +17341,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/392/card_img/28055/392card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17596,8 +17611,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2475/card_img/28411/2475card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17641,8 +17656,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2816/card_img/40130/2816card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17656,8 +17671,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2189/card_img/21803/2189card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -17715,21 +17730,6 @@
       "category": "체크",
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/279/card_img/20501/279card.png",
-      "oil_benefit": {
-        "has_benefit": false,
-        "description": null,
-        "discount_type": null,
-        "discount_value": null
-      }
-    },
-    {
-      "card_id": 365,
-      "card_name": "DC줌체크카드(비씨)",
-      "card_company": "NH농협카드",
-      "brand": "UnionPay",
-      "category": "체크",
-      "card_type": "할인형",
-      "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/365/card_img/20606/365card.png",
       "oil_benefit": {
         "has_benefit": false,
         "description": null,
@@ -17927,9 +17927,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2334/card_img/24279/2334card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 0.2% 포인트 추가 적립",
+        "discount_type": "percent",
+        "discount_value": 0.2
       }
     },
     {
@@ -18002,9 +18002,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1392/card_img/20750/1392card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "주유소 1.2% 캐시백",
+        "discount_type": "percent",
+        "discount_value": 1.2
       }
     },
     {
@@ -18017,9 +18017,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1623/card_img/22573/1623card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL 40원/L 적립",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -18257,9 +18257,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1699/card_img/23920/1699card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "SK주유소 40원/L 할인",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -18451,8 +18451,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2083/card_img/21916/2083card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -18781,8 +18781,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/331/card_img/20575/331card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -18811,8 +18811,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2370/card_img/25307/2370card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -18946,8 +18946,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2839/card_img/41666/2839card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -18976,8 +18976,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1900/card_img/22096/1900card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19156,8 +19156,8 @@
       "card_type": "마일리지형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/574/card_img/21307/574card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19231,8 +19231,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/320/card_img/20566/320card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19352,9 +19352,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1360/card_img/20796/1360card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-Oil 40원/L 적립",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -19411,8 +19411,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/647/card_img/21411/647card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19561,8 +19561,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/550/card_img/21255/550card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19576,8 +19576,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/405/card_img/20903/405card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19651,8 +19651,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1260/card_img/21047/1260card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19757,9 +19757,9 @@
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/1302/card_img/28075/1302card.png",
       "oil_benefit": {
         "has_benefit": true,
-        "description": "주유 주유/자동차",
-        "discount_type": null,
-        "discount_value": null
+        "description": "S-OIL 40원/L 적립",
+        "discount_type": "per_liter",
+        "discount_value": 40
       }
     },
     {
@@ -19816,8 +19816,8 @@
       "card_type": "할인형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/2212/card_img/21773/2212card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유 주유/자동차",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19906,8 +19906,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/316/card_img/20562/316card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19921,8 +19921,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/317/card_img/20563/317card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19936,8 +19936,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/628/card_img/21394/628card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
@@ -19951,8 +19951,8 @@
       "card_type": "포인트형",
       "card_image": "https://d1c5n4ri2guedi.cloudfront.net/card/688/card_img/22161/688card.png",
       "oil_benefit": {
-        "has_benefit": true,
-        "description": "주유",
+        "has_benefit": false,
+        "description": null,
         "discount_type": null,
         "discount_value": null
       }
